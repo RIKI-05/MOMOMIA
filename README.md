@@ -1,6 +1,8 @@
 # MOMOMIA 
 (This Repository is Hacktobefest - 2022 accepted)
-
+<br>
+Please Go through  [How to Contribute](#place) to know how you can contribute and get your PR's accepted 
+---
 The purpose of Online Food Ordering System is to automate the existing manual system by the help of computerized equipment’s and full-fledged computer software, fulfilling their requirements, so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same. The required software and hardware are easily available and easy to work with.
 
 Online Food Ordering System, as described above, can lead to error free, secure, reliable and fast management system. It can assist the user to concentrate on their other activities rather to concentrate on the record keeping. Thus it will help organization in better utilization of resources. The organization can maintain computerized records without redundant entries. That means that one need not be distracted by information that is not relevant, while being able to reach the information.
@@ -26,9 +28,10 @@ The website is minimized as much as possible to avoid errors when entering data.
 
 ![2022-10-09 (3)](https://user-images.githubusercontent.com/62802231/194740824-668509c3-4a5d-4ae1-86e0-e40d3992fbb1.png)
 
-
+<div id = "place">
 https://riki-05.github.io/MOMOMIA/MOMOMIA/index.html
 ---
+
 ## 📌How to Contribute📝:
 
 To contribute, look out for the issues raised by the maintainers as well as the other participants for contributions.
@@ -104,6 +107,7 @@ git push -u origin <your_branch_name>
 
 
 **15.** Woohoo! You have made a PR to the community-website :boom: . Wait for your submission to be accepted and your PR to be merged.
+</div>
 
 **Thank you for your interest in contributing to our Repo!🏼**
 

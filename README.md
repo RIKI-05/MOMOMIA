@@ -29,7 +29,7 @@ The website is minimized as much as possible to avoid errors when entering data.
 ![2022-10-09 (3)](https://user-images.githubusercontent.com/62802231/194740824-668509c3-4a5d-4ae1-86e0-e40d3992fbb1.png)
 
 <div id = "place">
-https://riki-05.github.io/MOMOMIA/MOMOMIA/index.html
+https://main--momomias.netlify.app/momomia/
 ---
 
 ## 📌How to Contribute📝:

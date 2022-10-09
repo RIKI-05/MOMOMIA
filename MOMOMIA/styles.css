@@ -53,14 +53,16 @@ a:hover {
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
   color: #000;
- 
 }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(0 0 0);
+  }
+ 
 .navbar .navbar-brand{
   color: #000;
   pointer-events: none;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: rgb(0 0 0);
 
 .nav-item {
   font-size: 1.1rem;

@@ -488,7 +488,7 @@ footer {
 }
 
 .socialMediaIcon:hover{
-  color:#ffc107;
+  color:#ffc107 !important;
 }
 
 .contactRow,

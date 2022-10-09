@@ -100,7 +100,7 @@ a:hover {
 
   width: 220px;
   height: 50px;
-  
+
   border: none;
   outline: none;
   color: #fff;
@@ -543,6 +543,9 @@ footer {
 .socialMediaIcon {
   margin-right: 15px;
   font-size: 2.2rem;
+}
+.socialMediaIcon:hover{
+  color: aqua;
 }
 
 .contactRow,

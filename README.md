@@ -25,6 +25,9 @@ The website is minimized as much as possible to avoid errors when entering data.
 
 
 ![2022-10-09 (3)](https://user-images.githubusercontent.com/62802231/194740824-668509c3-4a5d-4ae1-86e0-e40d3992fbb1.png)
+
+
+https://riki-05.github.io/MOMOMIA/MOMOMIA/index.html
 ---
 ## 📌How to Contribute📝:
 
@@ -33,7 +36,7 @@ Comment down your github ID and tell that you're working on the issue.
 
 ### To start contributing, follow the below guidelines: 
 
-**1.**  Fork [this](https://github.com/flyingSaucer87/community-website) repository.
+**1.**  Fork [this](https://github.com/RIKI-05/MOMOMIA) repository.
 
 **2.**  Clone your forked copy of the project.
 

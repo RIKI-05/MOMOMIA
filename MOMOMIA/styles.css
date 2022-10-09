@@ -30,9 +30,10 @@ a:hover {
 }
 
 .navbar-brand {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Roboto Serif', serif;
+    text-decoration: none;
     font-weight: 600;
-    font-size: 6.5rem;
+    font-size: 5rem;
 }
 
 .nav-item {

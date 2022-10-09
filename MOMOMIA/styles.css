@@ -74,33 +74,39 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   padding-top: 8%;
   padding-right: 10%;
-  text-align: center;
+  text-align: left;
 }
 
 .homeHeading {
-  font-weight: 400;
   font-size: 3.4rem;
+  line-height: 1.3em;
 }
 
 .homeHeading span {
-  font-size: 4.3rem;
-  border: 1px solid #000000;
-  background-color: white;
-  color: #000000;
-  padding: 1px 5px;
+  color: rgb(246, 34, 34);
 }
 
 .homeBtnDiv {
-  text-align: center;
+ 
 }
 
 .homeBtn {
-  width: 100%;
-  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  font-size: 1.2rem;
   border-radius: 24px;
+  background-color: rgb(246, 34, 34);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.homeBtn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(255, 60, 60);
 }
 
 .homeImgCol {
@@ -110,7 +116,7 @@ a:hover {
 }
 
 .homeImg {
-  width: 95%;
+  padding-top: 1em;
   height: 97%;
 }
 
@@ -485,7 +491,7 @@ footer {
 
 .contactRow,
 .addressRow {
-  width: 95%;
+  width: 97%;
   margin: auto;
 }
 

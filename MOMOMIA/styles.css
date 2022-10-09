@@ -205,7 +205,7 @@ a:hover {
 .menuHeading .col-auto {
     display: flex;
     justify-content: center;
-    align-items:
+    align-items: center;
 }
 
 .shoppingCart {

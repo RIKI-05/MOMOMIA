@@ -116,8 +116,8 @@ a:hover {
 }
 
 .homeImg {
-  padding-top: 1em;
-  height: 97%;
+  padding-top: 50px;
+  width: 100%;
 }
 
 /* *************************************Category Section ***************************************/
@@ -628,7 +628,7 @@ footer a {
     margin: 50px auto 0 auto;
   }
   .homeImg {
-    width: 70%;
+    width: 97%;
     height: 100%;
   }
   #categorySection {

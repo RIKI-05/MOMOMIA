@@ -42,6 +42,10 @@ a:hover {
   font-weight: 500;
 }
 
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
 /* ***********************************Home Section ********************************************/
 
 #homeSection {

@@ -3,6 +3,11 @@ body {
     background-color: #000000;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/EMcomic-Bold.ttf);
+}
+
 p {
     margin-bottom: 0;
 }
@@ -30,9 +35,9 @@ a:hover {
 }
 
 .navbar-brand {
-    font-family: 'Lucida Handwriting', cursive;
+    font-family: myFirstFont;
     font-weight: 600;
-    font-size: 4.0rem;
+    font-size: 3.7rem;
 }
 
 .nav-item {

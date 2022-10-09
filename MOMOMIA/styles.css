@@ -31,8 +31,8 @@ a:hover {
 
 .navbar-expand-lg {
   background-color: #fbab00;
-  background-image: radial-gradient(circle, #fffb00, #ffe400, #ffcd00, #ffb600, #ffa000, #f08519, #de6b25, #c9532b, #9a3930, #67262b, #36181d, #000000);
-  z-index: 2;
+  background-image: radial-gradient(circle, #36181d, #000000);
+  z-index: 2; 
   height: 74px;
 }
 

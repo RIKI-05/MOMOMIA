@@ -444,10 +444,13 @@ a:hover {
 }
 
 /* *****************************************Footer Section ****************************************/
+.h2{
+  color: #ffc107
+}
 
 footer {
   background-color: #0d1010;
-  color: snow;
+  color: #ffc107;
   padding: 3% 0 2% 0;
 }
 

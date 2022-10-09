@@ -30,18 +30,20 @@ a:hover {
 }
 
 .navbar-expand-lg {
-  background-color: #000000;
+  background-color: #fbab00;
+  background-image: radial-gradient(circle, #fffb00, #ffe400, #ffcd00, #ffb600, #ffa000, #f08519, #de6b25, #c9532b, #9a3930, #67262b, #36181d, #000000);
   z-index: 2;
   height: 74px;
 }
 
 .navbar-brand {
-  font-family: myFirstFont;
-  font-weight: 500;
-  /* font-size: 0.5rem; */
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 3.5rem;
+
+    font-family: myFirstFont;
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: ;
+    font-weight: 500;
+    font-size: 5.0rem;
 
 
 }
@@ -58,9 +60,11 @@ a:hover {
 /* ***********************************Home Section ********************************************/
 
 #homeSection {
-  position: relative;
-  padding: 20px 0;
-  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(59, 57, 57, 0.7)), url("https://www.clubmahindra.com/blog/media/section_images/bannerlarg-a3b2d550ed98d17.jpg");
+  padding: 20px 280px;
+  color: rgb(255, 255, 255);
 }
 
 .homeRow {
@@ -108,7 +112,7 @@ a:hover {
 }
 
 .homeImg {
-  width: 95%;
+  width: 90rem;
   height: 97%;
 }
 
@@ -367,7 +371,9 @@ a:hover {
 
 #healthySection {
   padding-top: 0.5%;
-  background-color: #000000;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(59, 57, 57, 0.7)), url("https://scx1.b-cdn.net/csz/news/800a/2020/covid19foodh.jpg");
   padding-bottom: 4%;
 }
 
@@ -479,10 +485,6 @@ footer {
 .socialMediaIcon {
   margin-right: 15px;
   font-size: 2.2rem;
-}
-
-.socialMediaIcon:hover{
-  color:#ffc107;
 }
 
 .contactRow,
@@ -609,12 +611,7 @@ footer a {
   visibility: visible;
 }
 
-@media screen and (max-width: 920px) {
-
-  .navbar-brand{
-    font-size: 3.0rem;
-    margin-bottom: 5px;
-  }
+@media screen and (max-width: 900px) {
   .homeTxtCol {
     padding-right: 0;
     padding-left: 0;
@@ -646,7 +643,6 @@ footer a {
 @media screen and (max-width: 500px) {
   .navbar-brand {
     font-size: 2.5rem;
-    margin-bottom: 5px;
   }
   .homeHeading {
     font-size: 2.8rem;
@@ -680,10 +676,6 @@ footer a {
   }
   .footerHeadingCol h2 {
     font-size: 2.5rem !important;
-  }
-  .socialMediaIcon {
-    margin-right: 10px;
-    font-size: 1.2rem;
   }
   .contactRow {
     font-size: 0.9rem;

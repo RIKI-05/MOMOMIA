@@ -118,6 +118,10 @@ a:hover {
   width: 100%;
 }
 
+.homeImg:hover{
+  transition: transform .2s;
+  transform: scale(1.25);
+}
 /* *************************************Category Section ***************************************/
 
 #categorySection {

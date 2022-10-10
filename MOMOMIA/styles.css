@@ -48,6 +48,18 @@ a:hover {
 .nav-item /* for each navbar item */ {
   font-size: 1.1rem;
   font-weight: 500;
+  border-radius: 2em;
+  border: 2px solid black;
+  color: black;
+  background-color: rgb(0,0,0,0);
+  margin : 1px;
+}
+
+.nav-item:hover{
+   color: white;
+  border-color: red;
+  transform: translateY(-3px);
+  box-shadow: 0px 12px 8px -4px red;
 }
 /* ***********************************Home Section ********************************************/
 

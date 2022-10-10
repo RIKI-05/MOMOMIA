@@ -426,6 +426,8 @@ a:hover {
 .knowMoreBtn:hover {
   background-color: #e89b3d;
   color: snow;
+  /* color: rgba(255, 255, 255, 1); */
+  box-shadow: 0 5px 13px rgb(210, 148, 32);
 }
 
 .knowMoreBtn:focus {

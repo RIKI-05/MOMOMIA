@@ -747,3 +747,34 @@ footer a {
     font-size: 0.9rem;
   }
 }
+@media screen and (max-width: 1000px){
+  .homeHeading{
+    text-align: center;
+  }
+  .homeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+  }
+  .navbar{
+    height: 14vh;
+  }
+  .homeTxtCol{
+    padding-top: 73px;
+    margin-top: 30px;
+  }
+  .homeImgCol{
+    width: 244px;
+    height: 229px;
+  }
+  #categorySection{
+    width: 145vw;
+  }
+  #healthySection{
+    width: 145vw;
+  }
+  #footer{
+    width: 145vw;
+  }
+}

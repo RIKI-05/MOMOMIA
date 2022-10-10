@@ -1,0 +1,732 @@
+/* ***********************************General Styles ********************************************/
+
+body {
+  font-family: "Ubuntu", sans-serif; /* sets font family for entire page */
+  background-color: #000000;
+}
+
+@font-face  /*  Specifies Custom Font to display the text */
+{
+    font-family: myFirstFont;
+    src: url(fonts/EMcomic-Bold.ttf);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+}
+/* *********************************** Navbar Section ********************************************/
+.navbar-expand-lg {
+  background-color: #000000;
+  z-index: 2;
+  height: 74px;
+}
+
+.navbar-brand {
+  font-family: myFirstFont;
+  font-weight: 500;
+  /* font-size: 0.5rem; */
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 3.5rem;
+
+
+}
+.nav-item /* for each navbar item */ 
+{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* ***********************************Home Section ********************************************/
+
+#homeSection {
+  position: relative;
+  padding: 20px 0;
+  color: white;
+}
+
+.homeRow {
+  width: 100%;
+  margin: auto;
+}
+/* left section of the Home containing Heading and Order button*/
+.homeTxtCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  padding-top: 8%;
+  padding-right: 10%;
+  text-align: left;
+}
+.homeHeading {
+  font-size: 3.4rem;
+  line-height: 1.3em;
+}
+/* Style the INEBRIATES to red color */
+.homeHeading span {
+  color: rgb(246, 34, 34);
+}
+/* Styles for the Order Button */
+.homeBtn {
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  width: 40%;
+  font-size: 1.2rem;
+  border-radius: 24px;
+  background-color: rgb(246, 34, 34);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.homeBtn:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(255, 60, 60);
+}
+/* right section of the Home section containing image*/
+.homeImgCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* styles for home section image */
+.homeImg {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.homeImg:hover{
+  transition: transform .2s;
+  transform: scale(1.25);
+}
+.homeImg:not(hover){
+  transition: transform .3s;
+}
+/* *************************************Category Section ***************************************/
+
+#categorySection {
+  padding-top: 1%;
+  background-color: #6f1a07;
+  padding-bottom: 6%;
+}
+
+.product-box-layout4 {
+  padding: 30px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 4rem;
+}
+
+.product-box-layout4:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+.product-box-layout4 .item-figure  /* indivdual card styles */
+{
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  height: 300px;
+  width: 100%;
+}
+
+.product-box-layout4 .item-figure:after 
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 74, 82, 0.8);
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-box-layout4 .item-figure:hover {
+  visibility: visible;
+  opacity: 0.6;
+}
+
+.product-box-layout4 .item-content {
+  text-align: center;
+  padding: 25px 0 0;
+}
+
+.product-box-layout4:after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e4e4e4;
+  z-index: -2;
+  transform: rotate(-3deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-box-layout4:hover:after 
+{
+  transform: rotate(3deg);
+}
+
+.product-box-layout4.productClicked .item-figure {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+/* ******************************************************Menu Card ************************************************/
+
+.menuHeading {
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+.menuHeading .col-12 h1 {
+  text-align: center;
+  color: snow;
+}
+
+.menuHeading .col-auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingCart {
+  padding-top: 5px;
+  font-size: 1.4rem;
+  color: snow;
+  position: absolute;
+  right: 5%;
+  top: 1%;
+}
+
+.shoppingCartWithItems {
+  color: #79d70f;
+}
+
+.shoppingCartAfter {
+  position: absolute;
+  font-size: 0.7rem;
+  padding: 1px 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  top: 0;
+  right: -13px;
+  color: white;
+}
+
+.shoppingCart:hover {
+  cursor: pointer;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  padding: 2rem 1rem 5rem 1rem;
+  background-color: #ffe6cc;
+  position: relative;
+  border: none;
+}
+
+.card:after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background-color: skyblue;
+  top: 0px;
+  right: 0px;
+  border-bottom: 20px solid #ffdab3;
+  border-left: 20px solid #ffdab3;
+  border-right: 20px solid #6f1a07;
+  border-top: 20px solid #6f1a07;
+  position: absolute;
+  -webkit-filter: drop-shadow(-5px 5px 3px #a6a6a6);
+  filter: drop-shadow(-5px 5px 3px #a6a6a6);
+}
+
+.card:before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid #ffdab3;
+  border-right: 30px solid #ffdab3;
+  border-left: 30px solid #6f1a07;
+  border-bottom: 30px solid #6f1a07;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  -webkit-filter: drop-shadow(7px -7px 5px #a6a6a6);
+  filter: drop-shadow(7px -7px 5px #a6a6a6);
+  margin-right: 10%;
+}
+
+.foodItemName {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  padding-right: 3px;
+}
+
+.card-body {
+  padding: 0 0.6rem;
+}
+
+.foodItemHr {
+  border-top: 0.5px solid #efb473;
+  width: 90%;
+  margin: 5px auto;
+}
+
+.vegIcon {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.text-muted-small {
+  color: #434b52;
+  margin-bottom: 3px;
+  font-size: 0.85rem;
+}
+
+.addCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.quantity {
+  background-color: snow;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  margin: auto 8px;
+  padding: 5px;
+}
+
+.menuBtn {
+  font-size: 0.75rem;
+}
+
+.menuBtn:hover {
+  cursor: pointer;
+}
+
+.checkOutRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.checkOutRow .knowMoreBtn {
+  background-color: #ffe6cc;
+  font-size: 1.3rem;
+}
+
+/* **********************************Hygiene Section ********************************************/
+
+#healthySection {
+  padding-top: 0.5%;
+  background-color: #000000;
+  padding-bottom: 4%;
+}
+
+.eatSure {
+  background-color: #efddc9;
+  border-radius: 22px;
+}
+
+.eatSure .row {
+  width: 100%;
+  padding: 25px 0;
+  margin: auto;
+}
+
+.eatSure .row .col-sm-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.borderLeft {
+  border-left: 1px solid black;
+}
+
+.icon-wrapper {
+  background-color: #e89b3d;
+  padding: 2px 6px;
+  border-radius: 3px;
+  padding-top: 0;
+}
+
+.eatSure .icon-wrapper svg {
+  width: 10px;
+  height: 10px;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+.knowMoreBtn {
+  border: 1px solid #e89b3d;
+  border-radius: 22px;
+}
+
+.knowMoreBtn:hover {
+  background-color: #e89b3d;
+  color: snow;
+  /* color: rgba(255, 255, 255, 1); */
+  box-shadow: 0 5px 13px rgb(210, 148, 32);
+}
+
+.knowMoreBtn:focus {
+  background-color: #e89b3d;
+}
+
+.safetyMeasuresDiv {
+  margin: 3% auto;
+  text-align: center;
+  color: snow;
+}
+
+.safetyMeasuresDiv .safetyMeasuresPara {
+  font-size: 1.1rem;
+}
+
+.safetyMeasures {
+  margin: 3% auto;
+}
+
+.safetyMeasures .col-sm-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.safetyMeasures .col-sm-3 p {
+  margin-top: 10px;
+}
+
+/* *****************************************Footer Section ****************************************/
+.h2{
+  color: #ffc107
+}
+
+footer {
+  background-color: #0d1010;
+  color: #ffc107;
+  padding: 3% 0 2% 0;
+}
+
+.footerHeadingCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.socialMedia /* social media section */
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.socialMediaIcon /* individual icons styling */
+{
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.socialMediaIcon:hover /* hover styles */
+{
+  color:#ffc107 !important;
+}
+
+.contactRow,
+.addressRow {
+  width: 97%;
+  margin: auto;
+}
+
+.addressRow .col-auto {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: snow;
+}
+
+.copyright 
+{
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+
+/************************ Shopping Cart CSS ********************/
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body .container-fluid {
+  padding: 5px;
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.checkIcon {
+  font-size: 1.5rem;
+  color: red;
+  margin: auto 7px;
+}
+
+.cartContentDiv {
+  padding: 10px 0 10px 0;
+}
+
+.cartContentRow .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cartContentRow .col-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartQuantity /* Total number of cart items */ 
+{
+  background-color: snow;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  margin: auto 8px 5px 8px;
+  padding: 5px;
+}
+
+.cartContentRow .col-2 .text-muted-small {
+  margin: auto 8px;
+}
+/* horizontal line after each selected item on cart */
+.cartHr {
+  color: black;
+  width: 90%;
+  margin: 5px auto;
+}
+/* Section for total amount on Cart */
+.totalAmountDiv {
+  padding-left: 15px;
+}
+
+/* Scroll To Top Button */
+
+#scrollToTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+/* Scroll To Top Button Hover Over styles */
+#scrollToTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+/* After Scroll Top Button Has Been Clicked */
+#scrollToTop:active {
+  background-color: #555;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* **************************Media Queries For Responsiveness**************************** */
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid white;
+}
+
+
+@media screen and (max-width: 920px) {
+
+  .navbar-brand{
+    font-size: 3.0rem;
+    margin-bottom: 5px;
+  }
+  .homeTxtCol {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .homeHeading {
+    font-size: 3rem;
+  }
+  .homeHeading span {
+    font-size: 3.9rem;
+  }
+  .homeImgCol {
+    margin: 50px auto 0 auto;
+  }
+  .homeImg {
+    width: 97%;
+    height: 100%;
+  }
+  #categorySection {
+    padding: 1% 10px 5%;
+  }
+  .product-box-layout4 .item-figure {
+    height: 200px;
+  }
+  .col-lg-4.col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  .homeHeading {
+    font-size: 2.8rem;
+  }
+  .homeHeading span {
+    font-size: 3.6rem;
+  }
+  .col-lg-4.col-sm-4.col-4 {
+    padding: 0 6px;
+  }
+  .product-box-layout4 .item-figure {
+    height: 130px;
+  }
+  .item-content .card-title {
+    font-size: 1.1rem;
+  }
+  .product-box-layout4 {
+    padding: 10px;
+  }
+  .product-box-layout4 .item-content {
+    padding: 15px 0 0;
+  }
+  .col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+  .eatSure {
+    margin-bottom: 30px;
+  }
+  .safetyMeasures {
+    margin-top: 12%;
+  }
+  .footerHeadingCol h2 {
+    font-size: 2.5rem !important;
+  }
+  .socialMediaIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  .contactRow {
+    font-size: 0.9rem;
+  }
+  .copyright {
+    font-size: 0.9rem;
+  }
+}

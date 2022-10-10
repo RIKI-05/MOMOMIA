@@ -621,6 +621,19 @@ footer a {
   visibility: visible;
 }
 
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid white;
+}
+
 @media screen and (max-width: 920px) {
 
   .navbar-brand{

@@ -122,6 +122,9 @@ a:hover {
   transition: transform .2s;
   transform: scale(1.25);
 }
+.homeImg:not(hover){
+  transition: transform .3s;
+}
 /* *************************************Category Section ***************************************/
 
 #categorySection {

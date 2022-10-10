@@ -24,16 +24,16 @@ The website is minimized as much as possible to avoid errors when entering data.
 
 # SCREENSHOTS
 
-![2022-10-09](https://user-images.githubusercontent.com/62802231/194740803-8d174c44-0eb5-403f-b123-ff66c544af37.png)
+![updatedMomomia1](https://user-images.githubusercontent.com/89804314/194807939-f82645f0-acab-441f-8c69-ef15eaee3c7b.jpg)
 
-![2022-10-09 (4)](https://user-images.githubusercontent.com/62802231/194740819-eca918f8-8e88-49ff-b14e-dafced25e3a4.png)
+![updatedMomomia2](https://user-images.githubusercontent.com/89804314/194807992-18e7d1bd-cbd0-46c5-b163-54548f6c98bf.jpg)
 
-![2022-10-09 (2)](https://user-images.githubusercontent.com/62802231/194740834-9966f193-2aad-4e74-b8ff-6fa2a8bd44ba.png)
+![updatedMomomia3](https://user-images.githubusercontent.com/89804314/194808047-36643fe9-ab51-43be-bc10-0079934eb661.jpg)
 
-![2022-10-09 (1)](https://user-images.githubusercontent.com/62802231/194740830-d2d25c59-a372-4dc9-9414-0b2b9291ab4b.png)
+![updatedMomomia4](https://user-images.githubusercontent.com/89804314/194808259-bdb3e8a9-8d3c-4bfd-a8e4-e971653836a3.jpg)
 
 
-![2022-10-09 (3)](https://user-images.githubusercontent.com/62802231/194740824-668509c3-4a5d-4ae1-86e0-e40d3992fbb1.png)
+
 
 <div id = "place">
 https://main--momomias.netlify.app/momomia/

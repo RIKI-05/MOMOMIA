@@ -1,9 +1,12 @@
+/* ***********************************General Styles ********************************************/
+
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif; /* sets font family for entire page */
   background-color: #000000;
 }
 
-@font-face {
+@font-face  /*  Specifies Custom Font to display the text */
+{
     font-family: myFirstFont;
     src: url(fonts/EMcomic-Bold.ttf);
 }
@@ -28,7 +31,7 @@ a:hover {
   width: 100%;
   margin: auto;
 }
-
+/* *********************************** Navbar Section ********************************************/
 .navbar-expand-lg {
   background-color: #000000;
   z-index: 2;
@@ -45,15 +48,10 @@ a:hover {
 
 
 }
-
-.nav-item {
+.nav-item /* for each navbar item */ 
+{
   font-size: 1.1rem;
   font-weight: 500;
-}
-
-.footer_clickable:hover {
-  color: #ffc107;
-  text-decoration: none;
 }
 /* ***********************************Home Section ********************************************/
 
@@ -67,7 +65,7 @@ a:hover {
   width: 100%;
   margin: auto;
 }
-
+/* left section of the Home containing Heading and Order button*/
 .homeTxtCol {
   display: flex;
   flex-direction: column;
@@ -77,20 +75,15 @@ a:hover {
   padding-right: 10%;
   text-align: left;
 }
-
 .homeHeading {
   font-size: 3.4rem;
   line-height: 1.3em;
 }
-
+/* Style the INEBRIATES to red color */
 .homeHeading span {
   color: rgb(246, 34, 34);
 }
-
-.homeBtnDiv {
- 
-}
-
+/* Styles for the Order Button */
 .homeBtn {
   text-decoration: none;
   font-weight: normal;
@@ -106,13 +99,13 @@ a:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(255, 60, 60);
 }
-
+/* right section of the Home section containing image*/
 .homeImgCol {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/* styles for home section image */
 .homeImg {
   padding-top: 50px;
   width: 100%;
@@ -152,8 +145,8 @@ a:hover {
   z-index: -1;
   transform: rotate(0deg);
 }
-
-.product-box-layout4 .item-figure {
+.product-box-layout4 .item-figure  /* indivdual card styles */
+{
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -161,7 +154,8 @@ a:hover {
   width: 100%;
 }
 
-.product-box-layout4 .item-figure:after {
+.product-box-layout4 .item-figure:after 
+{
   content: "";
   position: absolute;
   top: 0;
@@ -189,7 +183,8 @@ a:hover {
   padding: 25px 0 0;
 }
 
-.product-box-layout4:after {
+.product-box-layout4:after
+{
   content: "";
   position: absolute;
   top: 0;
@@ -206,7 +201,8 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.product-box-layout4:hover:after {
+.product-box-layout4:hover:after 
+{
   transform: rotate(3deg);
 }
 
@@ -483,20 +479,27 @@ footer {
   align-items: center;
   justify-content: flex-start;
 }
-
-.socialMedia {
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.socialMedia /* social media section */
+{
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 5%;
 }
 
-.socialMediaIcon {
+.socialMediaIcon /* individual icons styling */
+{
   margin-right: 15px;
   font-size: 2.2rem;
 }
 
-.socialMediaIcon:hover{
+.socialMediaIcon:hover /* hover styles */
+{
   color:#ffc107 !important;
 }
 
@@ -515,12 +518,14 @@ footer a {
   color: snow;
 }
 
-.copyright {
+.copyright 
+{
   text-align: center;
   margin: 30px auto 0 auto;
 }
 
-/* Shopping Cart CSS */
+
+/************************ Shopping Cart CSS ********************/
 
 .modal-body {
   padding: 0;
@@ -561,7 +566,8 @@ footer a {
   justify-content: center;
 }
 
-.cartQuantity {
+.cartQuantity /* Total number of cart items */ 
+{
   background-color: snow;
   display: flex;
   border: 1px solid black;
@@ -577,13 +583,13 @@ footer a {
 .cartContentRow .col-2 .text-muted-small {
   margin: auto 8px;
 }
-
+/* horizontal line after each selected item on cart */
 .cartHr {
   color: black;
   width: 90%;
   margin: 5px auto;
 }
-
+/* Section for total amount on Cart */
 .totalAmountDiv {
   padding-left: 15px;
 }
@@ -609,12 +615,12 @@ footer a {
   visibility: hidden;
   z-index: 1000;
 }
-
+/* Scroll To Top Button Hover Over styles */
 #scrollToTop:hover {
   cursor: pointer;
   background-color: #333;
 }
-
+/* After Scroll Top Button Has Been Clicked */
 #scrollToTop:active {
   background-color: #555;
 }
@@ -623,6 +629,9 @@ footer a {
   opacity: 1;
   visibility: visible;
 }
+
+
+/* **************************Media Queries For Responsiveness**************************** */
 
 *::-webkit-scrollbar {
   width: 15px;
@@ -636,6 +645,7 @@ footer a {
   background-color: black;
   border: 1px solid white;
 }
+
 
 @media screen and (max-width: 920px) {
 

@@ -94,9 +94,6 @@ a:hover {
   color: rgb(246, 34, 34);
 }
 
-.homeBtnDiv {
- 
-}
 
 .homeBtn {
   text-decoration: none;
@@ -139,6 +136,7 @@ a:hover {
   position: relative;
   z-index: 2;
   margin-bottom: 4rem;
+  cursor:pointer;
 }
 
 .product-box-layout4:before {

@@ -1,0 +1,25 @@
+body{
+    background: black;
+    color: white;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    word-wrap: normal;
+}
+li{
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}

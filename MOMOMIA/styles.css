@@ -111,6 +111,10 @@ a:hover {
   width: 100%;
 }
 
+.homeImg:hover{
+  transition: transform .2s;
+  transform: scale(1.25);
+}
 /* *************************************Category Section ***************************************/
 
 #categorySection {
@@ -623,7 +627,23 @@ footer a {
   visibility: visible;
 }
 
+
 /* **************************Media Queries For Responsiveness**************************** */
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid white;
+}
+
+
 @media screen and (max-width: 920px) {
 
   .navbar-brand{

@@ -192,22 +192,21 @@
                     </div>
 
                     <div class="userInfoDiv">
-                      <div class="mb-3">
+                      <div class="mb-3 px-2">
                         <label for="address">Address *</label> <br />
                         <textarea type="text" class="form-control" id="address"></textarea>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3 px-2">
                         <label for="note">Note (optional)</label> <br />
                         <textarea type="text" class="form-control" id="note"></textarea>
                       </div>
                     </div>
 
-                    <div class="totalAmountDiv"></div>
                   </div>
                 </div>
                 <div class="modal-footer">
+                  <div class="totalAmountDiv"></div>
                   <button type="button" class="btn btn-secondary" onclick="location.reload()">Clear Cart</button>
-                  <a href="tel:+91xxxxxxxxxx" class="btn btn-secondary">Call Us</a>
                   <a class="btn btn-primary" onclick="openWhatsapp()"> Order Now </a>
                 </div>
               </div>
@@ -529,7 +528,7 @@
 
             <div class="row checkOutRow">
               <button type="button" class="btn knowMoreBtn" data-toggle="modal" data-target="#exampleModal">
-                Check Out
+                <i class="fas fa-shopping-cart"></i> Go to Cart
               </button>
             </div>
           </div>

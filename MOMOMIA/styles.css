@@ -419,8 +419,9 @@ a:hover {
 }
 
 .knowMoreBtn {
+  padding: 8px 20px;
   border: 1px solid #e89b3d;
-  border-radius: 22px;
+  border-radius: 30px;
 }
 
 .knowMoreBtn:hover {
@@ -541,6 +542,10 @@ footer a {
   padding: 10px 0 10px 0;
 }
 
+.cartContentDiv h1{
+  text-align: center;
+}
+
 .cartContentRow .col-2 {
   display: flex;
   flex-direction: column;
@@ -555,20 +560,11 @@ footer a {
 }
 
 .cartQuantity {
-  background-color: snow;
-  display: flex;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 22px;
-  width: 22px;
-  margin: auto 8px 5px 8px;
-  padding: 5px;
+  font-size: 0.8rem;
 }
 
 .cartContentRow .col-2 .text-muted-small {
-  margin: auto 8px;
+  font-size: 1.2rem;
 }
 
 .cartHr {
@@ -578,9 +574,15 @@ footer a {
 }
 
 .totalAmountDiv {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
   padding-left: 15px;
 }
-
+.totalAmountText{
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
 /* Scroll To Top Button */
 
 #scrollToTop {

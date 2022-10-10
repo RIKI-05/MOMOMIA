@@ -698,7 +698,38 @@ footer a {
   }
 }
 
+.category-heading {
+    font-size: 5rem;
+    border: 1px solid #a8763e;
+    background-color: white;
+    color: #6f1a07;
+    padding: 1px 5px;
+    font-family: 'Roboto';
+}
+
+.nav-logo{
+    height: 100px;
+    width: 100px;
+}
+
+.nav-heading {
+    font-size: 54px;
+}
 @media screen and (max-width: 500px) {
+    .nav-logo{
+        height: 64px;
+        width: 64px;
+    }
+    .nav-heading {
+        font-size: 24px;
+    }
+    .category-heading {
+        font-size: 2.4rem
+    }
+    .nav-container {
+        width: 100%;
+        display: flex;
+    }
   .navbar-brand {
     font-size: 2.5rem;
     margin-bottom: 5px;

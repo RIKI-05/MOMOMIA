@@ -1,0 +1,80 @@
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+    background-color: #f39c12;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+.center{
+    text-align: center;
+} 
+#imge{
+    height: 42px;
+    width: 66px;
+    border-radius: 14px;
+}
+.feebtn{
+        text-decoration: none;
+        font-weight: normal;
+        transition: all 0.2s ease-in-out;
+        width: 40%;
+        font-size: 1.8rem;
+        border-radius: 24px;
+        background-color: rgb(246, 34, 34);
+        color: rgba(255, 255, 255, 0.8) ;
+}
+.feebtn:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgb(255, 60, 60);
+  }

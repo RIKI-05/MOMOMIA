@@ -10,6 +10,14 @@ body {
   src: url(fonts/EMcomic-Bold.ttf);
 }
 
+:root{
+  --f0:1vw;
+  --f1:1vh;
+}
+body{
+  overflow-x: hidden;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -27,14 +35,21 @@ a:hover {
 }
 
 .row {
-  width: 100%;
+  width: calc(var(--f0)*70);
   margin: auto;
 }
+
+
 /* *********************************** Navbar Section ********************************************/
+.navbar{
+  overflow-x: hidden;
+  width: calc(var(--f0)*100);
+}
+
 .navbar-expand-lg {
   background-color: #000000;
-  z-index: 2;
-  height: 74px;
+  z-index: 10;
+  height: calc(var(--f0)*5);
 }
 
 .navbar-brand {
@@ -46,8 +61,18 @@ a:hover {
   font-size: 3.5rem;
 }
 .nav-item /* for each navbar item */ {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: calc(var(--f0)*1.4);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav-item /* for each navbar item */ {
+    background-color: #fff;
+    /* color: #fff; */
+    border: 2px solid #000;
+    font-weight: 900;
+    font-size: large;
+  }
 }
 /* ***********************************Home Section ********************************************/
 
@@ -58,7 +83,7 @@ a:hover {
 }
 
 .homeRow {
-  width: 100%;
+  width: calc(var(--f0)*70);
   margin: auto;
 }
 /* left section of the Home containing Heading and Order button*/
@@ -137,8 +162,8 @@ a:hover {
 }
 /* styles for home section image */
 .homeImg {
-  padding-top: 50px;
-  width: 100%;
+  /* padding-top: 50px; */
+  width: calc(var(--f0)*50);
 }
 
 .homeImg:hover {
@@ -169,8 +194,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: calc(var(--f1)*55);
+  width: calc(var(--f0)*20);
   background-color: #ffffff;
   z-index: -1;
   transform: rotate(0deg);
@@ -179,8 +204,8 @@ a:hover {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
-  height: 300px;
-  width: 100%;
+  height: calc(var(--f1)*40);
+  width: calc(var(--f0)*15);
 }
 
 .product-box-layout4 .item-figure:after {
@@ -188,8 +213,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 300px;
-  width: 100%;
+  height: calc(var(--f1)*40);
+  width: calc(var(--f0)*15);
   background-color: rgba(255, 74, 82, 0.8);
   z-index: 0;
   opacity: 0;
@@ -199,6 +224,10 @@ a:hover {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.calimg{
+  width: calc(var(--f0)*17);height: calc(var(--f1)*40);
 }
 
 .product-box-layout4 .item-figure:hover {
@@ -216,8 +245,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  height: calc(var(--f1)*57);
+  width: calc(var(--f0)*21);
   background-color: #e4e4e4;
   z-index: -2;
   transform: rotate(-3deg);
@@ -656,7 +685,10 @@ footer a {
 /* **************************Media Queries For Responsiveness**************************** */
 
 *::-webkit-scrollbar {
-  width: 15px;
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 *::-webkit-scrollbar-track {
@@ -664,9 +696,10 @@ footer a {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: black;
-  border: 1px solid white;
+  background-color: maroon;
+  border-radius: 0;
 }
+
 
 @media screen and (max-width: 920px) {
   .navbar-brand {
@@ -768,11 +801,11 @@ footer a {
     margin-top: 30px;
   }
   .homeImgCol{
-    width: 244px;
-    height: 229px;
+    width:  calc(var(--f0)*35);
+    height: calc(var(--f1)*25);
   }
   #categorySection{
-    width: 145vw;
+    width: calc(var(--f0)*100);
   }
   #healthySection{
     width: 145vw;

@@ -793,11 +793,23 @@ footer a {
     margin-top: 10px;
     font-size: calc(var(--f0)*2);
   }
+
+  .safetyMeasuresDiv .safetyMeasuresPara {
+    font-size: calc(var(--f0)*2.5);
+  }
+
+  .socialMedia{
+    align-items: flex-end;
+  }
 }
 @media screen and (max-width: 1000px){
   .card{
     width: calc(var(--f0)*53);
     margin: 10px;
+  }
+
+  .safetyMeasuresDiv .safetyMeasuresPara {
+    font-size: calc(var(--f0)*2.5);
   }
 
   .text {
@@ -837,5 +849,8 @@ footer a {
   }
   #footer{
     width: calc(var(--f0)*100);
+  }
+  .socialMedia{
+    align-items: flex-end;
   }
 }

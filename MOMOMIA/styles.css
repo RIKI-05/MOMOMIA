@@ -5,10 +5,9 @@ body {
   background-color: #000000;
 }
 
-@font-face  /*  Specifies Custom Font to display the text */
-{
-    font-family: myFirstFont;
-    src: url(fonts/EMcomic-Bold.ttf);
+@font-face /*  Specifies Custom Font to display the text */ {
+  font-family: myFirstFont;
+  src: url(fonts/EMcomic-Bold.ttf);
 }
 
 p {
@@ -42,14 +41,11 @@ a:hover {
   font-family: myFirstFont;
   font-weight: 500;
   /* font-size: 0.5rem; */
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 3.5rem;
-
-
 }
-.nav-item /* for each navbar item */ 
-{
+.nav-item /* for each navbar item */ {
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -81,8 +77,42 @@ a:hover {
 }
 /* Style the INEBRIATES to red color */
 .homeHeading span {
-  color: rgb(246, 34, 34);
+  color: black;
+  -webkit-text-stroke: 0.14vw rgb(44, 42, 42);
+  letter-spacing: 2px;
+  stroke: #ffa5d8;
+  stroke-width: 3;
+  position: relative;
+  animation: textAnimate 5s infinite alternate;
 }
+
+.homeHeading span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(246, 34, 34);
+  -webkit-text-stroke: 0vw rgb(44, 42, 42);
+  border-right: 3px solid rgb(246, 34, 34);
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
 /* Styles for the Order Button */
 .homeBtn {
   text-decoration: none;
@@ -111,12 +141,12 @@ a:hover {
   width: 100%;
 }
 
-.homeImg:hover{
-  transition: transform .2s;
+.homeImg:hover {
+  transition: transform 0.2s;
   transform: scale(1.25);
 }
-.homeImg:not(hover){
-  transition: transform .3s;
+.homeImg:not(hover) {
+  transition: transform 0.3s;
 }
 /* *************************************Category Section ***************************************/
 
@@ -145,8 +175,7 @@ a:hover {
   z-index: -1;
   transform: rotate(0deg);
 }
-.product-box-layout4 .item-figure  /* indivdual card styles */
-{
+.product-box-layout4 .item-figure  /* indivdual card styles */ {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -154,8 +183,7 @@ a:hover {
   width: 100%;
 }
 
-.product-box-layout4 .item-figure:after 
-{
+.product-box-layout4 .item-figure:after {
   content: "";
   position: absolute;
   top: 0;
@@ -183,8 +211,7 @@ a:hover {
   padding: 25px 0 0;
 }
 
-.product-box-layout4:after
-{
+.product-box-layout4:after {
   content: "";
   position: absolute;
   top: 0;
@@ -201,8 +228,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.product-box-layout4:hover:after 
-{
+.product-box-layout4:hover:after {
   transform: rotate(3deg);
 }
 
@@ -464,8 +490,8 @@ a:hover {
 }
 
 /* *****************************************Footer Section ****************************************/
-.h2{
-  color: #ffc107
+.h2 {
+  color: #ffc107;
 }
 
 footer {
@@ -484,23 +510,20 @@ footer {
   color: #ffc107;
   text-decoration: none;
 }
-.socialMedia /* social media section */
-{
+.socialMedia /* social media section */ {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 5%;
 }
 
-.socialMediaIcon /* individual icons styling */
-{
+.socialMediaIcon /* individual icons styling */ {
   margin-right: 15px;
   font-size: 2.2rem;
 }
 
-.socialMediaIcon:hover /* hover styles */
-{
-  color:#ffc107 !important;
+.socialMediaIcon:hover /* hover styles */ {
+  color: #ffc107 !important;
 }
 
 .contactRow,
@@ -518,12 +541,10 @@ footer a {
   color: snow;
 }
 
-.copyright 
-{
+.copyright {
   text-align: center;
   margin: 30px auto 0 auto;
 }
-
 
 /************************ Shopping Cart CSS ********************/
 
@@ -566,8 +587,7 @@ footer a {
   justify-content: center;
 }
 
-.cartQuantity /* Total number of cart items */ 
-{
+.cartQuantity /* Total number of cart items */ {
   background-color: snow;
   display: flex;
   border: 1px solid black;
@@ -630,7 +650,6 @@ footer a {
   visibility: visible;
 }
 
-
 /* **************************Media Queries For Responsiveness**************************** */
 
 *::-webkit-scrollbar {
@@ -646,11 +665,9 @@ footer a {
   border: 1px solid white;
 }
 
-
 @media screen and (max-width: 920px) {
-
-  .navbar-brand{
-    font-size: 3.0rem;
+  .navbar-brand {
+    font-size: 3rem;
     margin-bottom: 5px;
   }
   .homeTxtCol {

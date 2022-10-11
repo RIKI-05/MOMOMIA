@@ -35,6 +35,9 @@
 </head>
 
 <body>
+    <div id="loading">
+    <img id="loading-image" src="https://user-images.githubusercontent.com/62802231/194802891-66d7c782-9765-419d-964b-b6bf6323b95a.gif" alt="Loading..." />
+  </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
         <div class="container">
@@ -1373,5 +1376,9 @@
 <!-- Custom JS -->
 <script src="./index.js"></script>
 </body>
-
+<script>
+  $(window).on('load', function () {
+    $('#loading').hide();
+  }) 
+</script>
 </html>

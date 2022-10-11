@@ -28,27 +28,6 @@ $(document).ready(function() {
         }, '500');
     });
 
-    // Navigation active state on scroll
-    var nav_links = $('section');
-    var main_nav = $('.collapse');
-    var main_nav_height = $('.navbar').outerHeight();
-
-    $(window).on('scroll', function () {
-        var cur_pos = $(this).scrollTop();
-
-        nav_links.each(function () {
-        var top = $(this).offset().top - main_nav_height,
-            bottom = top + $(this).outerHeight();
-        if (cur_pos >= top && cur_pos <= bottom) {
-            main_nav.find('li').removeClass('active');
-            main_nav
-            .find('a[href="#' + $(this).attr('id') + '"]')
-            .parent('li')
-            .addClass('active');
-        }
-        });
-    })
-
     $(".navbar a").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {

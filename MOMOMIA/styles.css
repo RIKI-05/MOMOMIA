@@ -406,6 +406,19 @@ a:hover {
   padding-bottom: 4%;
 }
 
+#healthySection h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+#healthySection h1 span {
+  font-size: 4.5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #a8763e;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+}
+
 .eatSure {
   background-color: #efddc9;
   border-radius: 22px;

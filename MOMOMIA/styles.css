@@ -443,6 +443,19 @@ a:hover {
     padding-bottom: 4%;
 }
 
+#healthySection h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+#healthySection h1 span {
+  font-size: 4.5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #000000;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+}
+
 .eatSure {
     background-color: #efddc9;
     border-radius: 22px;
@@ -469,10 +482,17 @@ a:hover {
 }
 
 .icon-wrapper {
+
     background-color: #e89b3d;
     padding: 2px 6px;
     border-radius: 3px;
     padding-top: 0;
+
+  background-color: #34b233;
+  padding: 2px 6px;
+  border-radius: 3px;
+  padding-top: 0;
+
 }
 
 .eatSure .icon-wrapper svg {

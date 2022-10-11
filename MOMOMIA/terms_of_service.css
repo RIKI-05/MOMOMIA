@@ -3,6 +3,27 @@ body{
     color: white;
 }
 
+
+/* *********************************** Navbar Section ********************************************/
+.navbar-expand-lg {
+  background-color: #000000;
+  z-index: 2;
+  height: 74px;
+}
+
+.navbar-brand {
+  font-family: myFirstFont;
+  font-weight: 500;
+  /* font-size: 0.5rem; */
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.nav-item /* for each navbar item */ {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 header{
     display: flex;
     align-items: center;

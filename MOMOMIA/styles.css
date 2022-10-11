@@ -124,7 +124,6 @@ a:hover {
   background-color: rgb(246, 34, 34);
   color: rgba(255, 255, 255, 0.8);
 }
-
 .homeBtn:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(255, 60, 60);
@@ -350,6 +349,14 @@ a:hover {
   margin-left: 5px;
 }
 
+.nonVegIcon{
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: 5px;
+}
+  
+
 .text-muted-small {
   color: #434b52;
   margin-bottom: 3px;
@@ -448,8 +455,23 @@ a:hover {
 }
 
 .knowMoreBtn {
+  padding: 8px 20px;
   border: 1px solid #e89b3d;
-  border-radius: 22px;
+  border-radius: 30px;
+}
+
+.modal-content {
+  background-color: #ffe6cc;
+}
+
+textarea#address, textarea#note {
+  background-color: #6f1a07;
+  color: white;
+  font-style: italic;
+}
+
+.cartContentDiv h1{
+  text-align: center;
 }
 
 .knowMoreBtn:hover {
@@ -588,20 +610,11 @@ footer a {
 }
 
 .cartQuantity /* Total number of cart items */ {
-  background-color: snow;
-  display: flex;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 22px;
-  width: 22px;
-  margin: auto 8px 5px 8px;
-  padding: 5px;
+  font-size: 0.8rem;
 }
 
 .cartContentRow .col-2 .text-muted-small {
-  margin: auto 8px;
+  font-size: 1.2rem;
 }
 /* horizontal line after each selected item on cart */
 .cartHr {
@@ -611,7 +624,15 @@ footer a {
 }
 /* Section for total amount on Cart */
 .totalAmountDiv {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
   padding-left: 15px;
+}
+
+.totalAmountText{
+  font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 /* Scroll To Top Button */
@@ -746,4 +767,39 @@ footer a {
   .copyright {
     font-size: 0.9rem;
   }
+}
+@media screen and (max-width: 1000px){
+  .homeHeading{
+    text-align: center;
+  }
+  .homeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+  }
+  .navbar{
+    height: 14vh;
+  }
+  .homeTxtCol{
+    padding-top: 73px;
+    margin-top: 30px;
+  }
+  .homeImgCol{
+    width: 244px;
+    height: 229px;
+  }
+  #categorySection{
+    width: 145vw;
+  }
+  #healthySection{
+    width: 145vw;
+  }
+  #footer{
+    width: 145vw;
+  }
+}
+/* checkout icons */
+.checkIcon {
+  color:green;
 }

@@ -151,7 +151,7 @@ $(document).ready(function() {
 
             $('.cartContentDiv').empty();
             for (var i = 0; i < food.length; i++) {
-                let cartTxt = '<div class="row cartContentRow"><div class="col-10"><div style="display:flex;"><p>' + food[i][0] + '</p> <p class="text-muted-small">' + food[i][3] + '<p></div><i class="fas fa-rupee-sign"> ' + food[i][2] + '</i></p>  </div>  <div class="col-2"> <p class="text-muted-small"><i class="fas fa-rupee-sign"></i> ' + food[i][1] * food[i][2] + '</p>  <span class="cartQuantity"> ' + ' <span> Qty : </span>' + food[i][1] + '</span> </div>  </div> <hr class="cartHr">';
+                let cartTxt = '<div class="row cartContentRow"><div class="col-10"><div style="display:flex;"><p>' + food[i][0] + '</p> <p class="text-muted-small">' + food[i][3] + '<p></div><span>&#8377; ' + food[i][2] + '</span></p>  </div>  <div class="col-2"> <p class="text-muted-small"><span>&#8377;</span>' + food[i][1] * food[i][2] + '</p>  <span class="cartQuantity"> ' + ' <span> Qty : </span>' + food[i][1] + '</span> </div>  </div> <hr class="cartHr">';
                 $('.cartContentDiv').append(cartTxt);
             }
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
         }
 
         $('.totalAmountDiv').empty();
-        $('.totalAmountDiv').append('<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' + '<i class="fas fa-rupee-sign"></i> ' + totalAmount);
+        $('.totalAmountDiv').append('<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' + '<span>&#8377;</span>' + totalAmount);
 
     }
 

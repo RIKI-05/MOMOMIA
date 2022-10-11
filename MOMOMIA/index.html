@@ -37,58 +37,67 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
-        <div class="container">
-            <!-- Code for Navigation Bar -->
-            <ul class="px-0 mx-0">
-                <img src="./images/navbar-logo.gif" style="height: 100px; width: 100px">
-            </ul>
-            <a class="navbar-brand" href="#" style="font-size :56px;font-family: elinga;">MOMOMIA</a>
-            <!--         <a style ="font-size :class="navbar-brand" href="#">MOMOMIA</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="container">
+        <!-- Code for Navigation Bar -->
+        <ul class="px-0 mx-0">
+          <img src="./images/navbar-logo.gif" style="height: 100px; width: 100px">
+        </ul>
+        <a class="navbar-brand" href="#" style="font-size :56px">MOMOMIA</a>
+<!--         <a style ="font-size :class="navbar-brand" href="#">MOMOMIA</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link px-3" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="#categorySection">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="#healthySection">Hygiene</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="#footer">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="#homeSection">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#categorySection">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#healthySection">Hygiene</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#footer">Contact Us</a>
+            </li>
+          </ul>
         </div>
     </nav>
 
     <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
-
-    <div class="container" style="height: 100vh; width: 132vw; display: flex; justify-content: center">
+    
+    <!-- <section id="home" > -->
+      <div class="container" style="height: 100vh; display: flex; justify-content: center">
         <section id="homeSection" class="d-flex justify-content-center">
-            <div class="row homeRow">
-                <div class="col-lg-6 homeTxtCol">
-                    <h1 class="homeHeading">
-                        Where the Flavor <br />
-                        <span data-text="INEBRIATES">INEBRIATES</span>
-                        <br /> you
-                    </h1>
-                    <br />
-                    <div class="homeBtnDiv">
-                        <a href="#categorySection" class="btn homeBtn">Order Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 homeImgCol">
-                    <img class="homeImg" src="./images/momoss.png" alt="momos" />
-                </div>
+          <div class="row homeRow">
+            <div class="col-lg-6 homeTxtCol">
+              <h1 class="homeHeading">
+                Where the Flavor <br />
+                <span><b>INEBRIATES</b></span> <br/>
+                you
+              </h1>
+              <br />
+              <div class="homeBtnDiv">
+                <a href="#categorySection" class="btn homeBtn">Order Now</a>
+              </div>
             </div>
+            <div class="col-lg-6 homeImgCol">
+              <img class="homeImg" src="./images/momoss.png" alt="momos" />
+            </div>
+          </div>
         </section>
-    </div>
+      </div>
+    <!-- </section> -->
 
     <br />
 
@@ -1302,42 +1311,32 @@
     </section>
 
     <!-- Footer starts here -->
+    
+    <footer >
+      <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-9 footerHeadingCol">
+            <h2 style="font-family: 'Roboto', cursive; font-weight: 600; font-size: 3rem;">MOMOMIA</h2>
+          </div>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-9 footerHeadingCol">
-                    <h2 style="font-family: 'elinga'; font-weight: 600; font-size: 3rem;">MOMOMIA</h2>
-
-                </div>
-
-                <div class="col-3 socialMedia">
-                    <a href="#" class="socialMediaIcon">
-                        <span><i class="fab fa-facebook-f"></i></span></a>
-                    <a href="#" class="socialMediaIcon">
-                        <span><i class="fab fa-twitter"></i></span></a>
-                    <a href="#" class="socialMediaIcon">
-                        <span><i class="fab fa-instagram"></i></span></a>
-                    <a href="https://www.linkedin.com/in/rishika-garg05/" target="_blank" class="socialMediaIcon">
-                        <span><i class="fab fa-linkedin"></i></span></a>
-                </div>
-            </div>
-
-
-            <div class="row contactRow">
-                <p>
-                    <a class="footer_clickable" href="#">Policies</a> |
-                    <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a> |
-                    <!-- <a class="footer_clickable" href="tel:+919871198882">Contact Us</a> -->
-                    <a class="footer_clickable" href="./contactus.html">Contact Us</a>
-
-                </p>
-            </div>
-
-            <div class="row copyrightRow">
-                <p class="copyright">&copy; Copyright MOMOMIA All rights reserved.</p>
-            </div>
+          <div class="col-3 socialMedia">
+            <a href="#" class="socialMediaIcon">
+              <span><i class="fab fa-facebook-f"></i></span
+            ></a>
+            <a href="#" class="socialMediaIcon">
+              <span><i class="fab fa-twitter"></i></span
+            ></a>
+            <a href="#" class="socialMediaIcon">
+              <span><i class="fab fa-instagram"></i></span
+            ></a>
+            <a href="https://www.linkedin.com/in/rishika-garg05/" target="_blank" class="socialMediaIcon">
+              <span><i class="fab fa-linkedin"></i></span
+            ></a>
+          </div>
         </div>
+      </div>
+    </section>
     </footer>
 
 

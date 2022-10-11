@@ -452,6 +452,17 @@ a:hover {
   border: 1px solid #e89b3d;
   border-radius: 30px;
 }
+
+.modal-content {
+  background-color: #ffe6cc;
+}
+
+textarea#address, textarea#note {
+  background-color: #6f1a07;
+  color: white;
+  font-style: italic;
+}
+
 .cartContentDiv h1{
   text-align: center;
 }

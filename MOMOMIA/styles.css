@@ -124,7 +124,6 @@ a:hover {
   background-color: rgb(246, 34, 34);
   color: rgba(255, 255, 255, 0.8);
 }
-
 .homeBtn:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(255, 60, 60);
@@ -799,4 +798,8 @@ footer a {
   #footer{
     width: 145vw;
   }
+}
+/* checkout icons */
+.checkIcon {
+  color:green;
 }

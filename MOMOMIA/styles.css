@@ -350,6 +350,14 @@ a:hover {
   margin-left: 5px;
 }
 
+.nonVegIcon{
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  margin-left: 5px;
+}
+  
+
 .text-muted-small {
   color: #434b52;
   margin-bottom: 3px;

@@ -3,7 +3,6 @@ let totalAmount = 0;
 
 $(document).ready(function() {
 
-
     if ($(document).width() <= 992) {
         $('.navbar-nav').removeClass("ml-auto");
         $('.navbar-nav').addClass("mr-auto");
@@ -28,33 +27,6 @@ $(document).ready(function() {
             scrollTop: 0
         }, '500');
     });
-
-
-    const sections=document.querySelectorAll("section");
-    const navLi=document.querySelectorAll("nav  .coontainer ul li");
-
-    window.onscroll=() => {
-        let current= "";
-        
-        sections.forEach((section)=>{
-            const sectionTop=section.offsetTop;
-            const scrollY=window.pageYOffset;
-            
-            if ( scrollY >= sectionTop - 60 ){
-            current = section.getAttribute("id");
-            };
-        });
-
-        navLi.forEach((li) => {
-            li.classList.remove("active");
-            console.log(current);
-            if (li.classList.contains(current)){
-                li.classList.add("active");
-                        }
-        });
-    };
-
-
 
     $(".navbar a").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior

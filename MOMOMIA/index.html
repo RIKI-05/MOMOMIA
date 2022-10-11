@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link px-3" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link px-3" href="#homeSection">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link px-4" href="#categorySection">Categories</a>
@@ -75,27 +75,28 @@
     </nav>
 
     <a id="scrollToTop" class="btn"><i class="fas fa-caret-up"></i></a>
-
-    <div class="container" style="height: 100vh; display: flex; justify-content: center">
-      <section id="homeSection" class="d-flex justify-content-center">
-        <div class="row homeRow">
-          <div class="col-lg-6 homeTxtCol">
-            <h1 class="homeHeading">
-              Where the Flavor <br />
-              <span><b>INEBRIATES</b></span> <br/>
-              you
-            </h1>
-            <br />
-            <div class="homeBtnDiv">
-              <a href="#categorySection" class="btn homeBtn">Order Now</a>
+    <!-- <section id="home" > -->
+      <div class="container" style="height: 100vh; display: flex; justify-content: center">
+        <section id="homeSection" class="d-flex justify-content-center">
+          <div class="row homeRow">
+            <div class="col-lg-6 homeTxtCol">
+              <h1 class="homeHeading">
+                Where the Flavor <br />
+                <span><b>INEBRIATES</b></span> <br/>
+                you
+              </h1>
+              <br />
+              <div class="homeBtnDiv">
+                <a href="#categorySection" class="btn homeBtn">Order Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6 homeImgCol">
+              <img class="homeImg" src="./images/momoss.png" alt="momos" />
             </div>
           </div>
-          <div class="col-lg-6 homeImgCol">
-            <img class="homeImg" src="./images/momoss.png" alt="momos" />
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    <!-- </section> -->
 
     <br />
 
@@ -1268,7 +1269,8 @@
     
     <!-- Footer starts here -->
     
-    <footer id="footer">
+    <footer >
+      <section id="footer">
       <div class="container">
         <div class="row">
           <div class="col-9 footerHeadingCol">
@@ -1303,6 +1305,7 @@
           <p class="copyright">&copy; Copyright MOMOMIA All rights reserved.</p>
         </div>
       </div>
+    </section>
     </footer>
 
     <!-- Bootstrap JS -->

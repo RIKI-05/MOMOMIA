@@ -121,12 +121,13 @@ $(document).ready(function() {
         let quantity = $(this).siblings(".quantity");
         let foodNameClicked = quantity.parent().siblings('div').children().first().text().trim();
         let singleFoodAmount = Number(quantity.parent().siblings('div').children().last().text());
+        let isVeg = quantity.parent().siblings('div').children().first().children().first().children().hasClass("vegIcon");
 
         let count = Number(quantity.text());
         if ($(this)[0].className.search('plus') > -1) {
             count = count + 1;
             quantity.text(count);
-            ToCart(foodNameClicked, count, singleFoodAmount);
+            ToCart(foodNameClicked, count, isVeg, singleFoodAmount);
 
         } else if ($(this)[0].className.search('minus') > -1) {
             if (count <= 0) {
@@ -134,15 +135,20 @@ $(document).ready(function() {
             } else {
                 count = count - 1;
                 quantity.text(count);
-                ToCart(foodNameClicked, count, singleFoodAmount);
+                ToCart(foodNameClicked, count, isVeg, singleFoodAmount);
             }
         }
     });
 
-    function ToCart(foodNameClicked, foodQuantity, singleFoodAmount) {
+    function ToCart(foodNameClicked, foodQuantity, isVeg, singleFoodAmount) {
         let foodAlreadyThere = false;
         let foodPos;
-
+        let node;
+        if (isVeg) {
+            node = '<img class="vegIcon" src="./images/veg.jpg" alt="" />';
+        } else {
+            node = '<img class="nonVegIcon" src="./images/non-veg.jpg" alt="" />'
+        }
         for (var i = 0; i < food.length; i++) {
             if (food[i][0] === foodNameClicked) {
                 foodAlreadyThere = true;
@@ -156,9 +162,9 @@ $(document).ready(function() {
         if (foodAlreadyThere) {
 
             food.splice(foodPos, 1);
-            food.push([foodNameClicked, foodQuantity, singleFoodAmount]);
+            food.push([foodNameClicked, foodQuantity, singleFoodAmount, node]);
         } else {
-            food.push([foodNameClicked, foodQuantity, singleFoodAmount]);
+            food.push([foodNameClicked, foodQuantity, singleFoodAmount, node]);
         }
 
         // Remove Food items with quantity = 0
@@ -173,7 +179,7 @@ $(document).ready(function() {
 
             $('.cartContentDiv').empty();
             for (var i = 0; i < food.length; i++) {
-                let cartTxt = '<div class="row cartContentRow"><div class="col-10"> <p>' + food[i][0] + ' </p> <p class="text-muted-small"><i class="fas fa-rupee-sign"></i> ' + food[i][2] + '</p>  </div>  <div class="col-2"> <p class="text-muted-small"><i class="fas fa-rupee-sign"></i> ' + food[i][1] * food[i][2] + '</p>  <span class="cartQuantity"> ' + ' <span> Qty : </span>' + food[i][1] + '</span> </div>  </div> <hr class="cartHr">';
+                let cartTxt = '<div class="row cartContentRow"><div class="col-10"><div style="display:flex;"><p>' + food[i][0] + '</p> <p class="text-muted-small">' + food[i][3] + '<p></div><i class="fas fa-rupee-sign"></i> ' + food[i][2] + '</p>  </div>  <div class="col-2"> <p class="text-muted-small"><i class="fas fa-rupee-sign"></i> ' + food[i][1] * food[i][2] + '</p>  <span class="cartQuantity"> ' + ' <span> Qty : </span>' + food[i][1] + '</span> </div>  </div> <hr class="cartHr">';
                 $('.cartContentDiv').append(cartTxt);
             }
 

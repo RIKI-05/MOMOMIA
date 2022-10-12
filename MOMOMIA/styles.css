@@ -544,11 +544,6 @@ footer {
   font-size: 2.2rem;
 }
 
-.socialMediaIcon:hover /* hover styles */ {
-  color: #ffc107 !important;
-  font-size: 2.3rem;
-}
-
 .contactRow,
 .addressRow {
   width: 97%;
@@ -670,6 +665,25 @@ footer a {
 #scrollToTop.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Social icon Hover colors */
+
+.fa-facebook-f:hover {
+  color: #4267B2;
+  font-size: 2.3rem;
+}
+.fa-twitter:hover {
+  color: #00aaee;
+  font-size: 2.3rem;
+}
+.fa-instagram:hover {
+  color: #E1306C;
+  font-size: 2.3rem;
+}
+.fa-facebook-f:hover {
+  color: #0e76a8;
+  font-size: 2.3rem;
 }
 
 /* **************************Media Queries For Responsiveness**************************** */

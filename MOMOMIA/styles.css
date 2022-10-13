@@ -10,7 +10,7 @@ body {
   src: url(fonts/EMcomic-Bold.ttf);
 }
 
-#loading {
+/* #loading {
   position: fixed;
   display: block;
   width: 100%;
@@ -21,7 +21,7 @@ body {
   opacity: 0.8;
   background-color: #000000;
   z-index: 99;
-}
+} */
 
 p {
   margin-bottom: 0;
@@ -555,6 +555,14 @@ footer {
 .socialMediaIcon /* individual icons styling */ {
   margin-right: 15px;
   font-size: 2.2rem;
+}
+.socialMediaIcon:hover{
+  animation:rotate 0.75s;
+
+}
+@keyframes rotate{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
 }
 
 .contactRow,

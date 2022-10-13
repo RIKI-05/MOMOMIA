@@ -714,6 +714,16 @@ footer a {
   border: 1px solid white;
 }
 
+@media screen and (max-width: 992px){
+  .navbar-nav{
+  background-color: #FFC107;
+  text-align: right;
+  width: 150px;
+  border-radius: 10%;
+  
+}
+}
+
 @media screen and (max-width: 920px) {
   .navbar-brand {
     font-size: 3rem;

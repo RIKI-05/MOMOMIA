@@ -125,8 +125,12 @@ a:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 .homeBtn:hover {
-  color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(255, 60, 60);
+  background-color: transparent;
+  color:  rgb(246, 34, 34);
+  border: 1px solid  rgb(246, 34, 34);
+  transition: 0.8s;
+  box-shadow:  rgb(246, 34, 34);
 }
 /* right section of the Home section containing image*/
 .homeImgCol {
@@ -138,12 +142,21 @@ a:hover {
 .homeImg {
   padding-top: 50px;
   width: 100%;
+  height: auto;
+  margin-top: 50px !important;
+  top: 50%;
+  left: 100%;
+  margin:-60px 0 0 -60px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
 }
 
-.homeImg:hover {
-  transition: transform 0.2s;
-  transform: scale(1.25);
-}
+
 .homeImg:not(hover) {
   transition: transform 0.3s;
 }
@@ -706,8 +719,9 @@ footer a {
     margin: 50px auto 0 auto;
   }
   .homeImg {
-    width: 97%;
+    width: auto;
     height: 100%;
+    margin-left: 10px !important;
   }
   #categorySection {
     padding: 1% 10px 5%;

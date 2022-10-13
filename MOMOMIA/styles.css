@@ -10,6 +10,19 @@ body {
   src: url(fonts/EMcomic-Bold.ttf);
 }
 
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #000000;
+  z-index: 99;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -124,7 +137,6 @@ a:hover {
   background-color: rgb(246, 34, 34);
   color: rgba(255, 255, 255, 0.8);
 }
-
 .homeBtn:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 5px 15px rgb(255, 60, 60);
@@ -466,8 +478,8 @@ a:hover {
 }
 
 textarea#address, textarea#note {
-  background-color: #6f1a07;
-  color: white;
+  background-color: white;
+  color: black;
   font-style: italic;
 }
 
@@ -543,10 +555,6 @@ footer {
 .socialMediaIcon /* individual icons styling */ {
   margin-right: 15px;
   font-size: 2.2rem;
-}
-
-.socialMediaIcon:hover /* hover styles */ {
-  color: #ffc107 !important;
 }
 
 .contactRow,
@@ -670,6 +678,25 @@ footer a {
 #scrollToTop.show {
   opacity: 1;
   visibility: visible;
+}
+
+/* Social icon Hover colors */
+
+.fa-facebook-f:hover {
+  color: #4267B2;
+  font-size: 2.3rem;
+}
+.fa-twitter:hover {
+  color: #00aaee;
+  font-size: 2.3rem;
+}
+.fa-instagram:hover {
+  color: #E1306C;
+  font-size: 2.3rem;
+}
+.fa-facebook-f:hover {
+  color: #0e76a8;
+  font-size: 2.3rem;
 }
 
 /* **************************Media Queries For Responsiveness**************************** */
@@ -799,4 +826,8 @@ footer a {
   #footer{
     width: 145vw;
   }
+}
+/* checkout icons */
+.checkIcon {
+  color:green;
 }

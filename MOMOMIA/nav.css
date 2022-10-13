@@ -1,0 +1,75 @@
+/* ***********************************General Styles ********************************************/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* *****************************************Footer Section ****************************************/
+.h2 {
+  color: #ffc107;
+}
+
+footer {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #0d1010;
+  color: #ffc107;
+  padding: 3% 0 2% 0;
+}
+
+.footerHeadingCol {
+  padding-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.socialMedia /* social media section */ {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.socialMediaIcon /* individual icons styling */ {
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.socialMediaIcon:hover /* hover styles */ {
+  color: #ffc107 !important;
+  font-size: 2.3rem;
+}
+
+.contactRow,
+.addressRow {
+  padding-left: 5.5%;
+  width: 97%;
+  margin: auto;
+}
+
+.addressRow .col-auto {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: snow;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+/* checkout icons */
+.checkIcon {
+  color: green;
+}

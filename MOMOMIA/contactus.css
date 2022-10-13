@@ -172,38 +172,38 @@
   .contactForm {
     width: 100%;
   }
-}
+  /* Footer css */
+  footer {
+    background-color: #0d1010;
+    color: #ffc107;
+    padding: 3% 0 2% 0;
+  }
 
-/* Footer css */
-footer {
-  /* background-color: #0d1010; */
-  color: #ffc107;
-  padding: 3% 0 2% 0;
-}
+  .footerHeadingCol {
+    padding-left: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-.footerHeadingCol {
-  padding-left: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
+  .contactRow,
+  .addressRow {
+    padding-left: 10rem;
+    padding-top: 5px;
+    margin: auto;
+  }
 
-.contactRow,
-.addressRow {
-  padding-top: 5px;
-  margin: auto;
-}
+  .addressRow .col-auto {
+    padding: 0;
+    margin: 0;
+  }
 
-.addressRow .col-auto {
-  padding: 0;
-  margin: 0;
-}
+  footer a {
+    color: snow;
+  }
 
-footer a {
-  color: snow;
-}
-
-.copyright {
-  text-align: center;
-  margin: 30px auto 0 auto;
+  .copyright {
+    text-align: center;
+    margin: 30px auto 0 auto;
+  }
 }

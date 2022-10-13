@@ -46,11 +46,13 @@
 }
 
 .contact .content h2 {
-  font-size: 37px;
+  font-size: 38px;
   font-weight: 400;
   color: beige;
 }
 .contact .content p {
+  padding-top: 4px;
+  font-size: 22px;
   font-weight: 275;
   color: beige;
 }

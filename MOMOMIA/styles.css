@@ -10,6 +10,19 @@ body {
   src: url(fonts/EMcomic-Bold.ttf);
 }
 
+#loading {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #000000;
+  z-index: 99;
+}
+
 p {
   margin-bottom: 0;
 }

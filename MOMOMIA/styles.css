@@ -465,8 +465,8 @@ a:hover {
 }
 
 textarea#address, textarea#note {
-  background-color: #6f1a07;
-  color: white;
+  background-color: white;
+  color: black;
   font-style: italic;
 }
 

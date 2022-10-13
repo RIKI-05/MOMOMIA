@@ -35,6 +35,9 @@
 </head>
 
 <body>
+    <div id="loading">
+    <img id="loading-image" src="https://user-images.githubusercontent.com/62802231/194802891-66d7c782-9765-419d-964b-b6bf6323b95a.gif" alt="Loading..." />
+  </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="z-index: 11">
         <div class="container">
@@ -42,7 +45,7 @@
             <ul class="px-0 mx-0">
                 <img src="./images/navbar-logo.gif" style="height: 100px; width: 100px">
             </ul>
-            <a class="navbar-brand" href="#" style="font-size :56px;font-family: elinga;">MOMOMIA</a>
+            <a class="navbar-brand" href="index.html" style="font-size :56px;font-family: elinga;">MOMOMIA</a>
             <!--         <a style ="font-size :class="navbar-brand" href="#">MOMOMIA</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -159,13 +162,15 @@
                                 <div class="container-fluid">
                                     <div class="row paymentInfoRow">
                                         <div class="col paymentInfo">
-                                            <span class="checkIcon" style="color: green"><i class="fas fa-check-circle"></i></span> Select Menu
+                                            <span class="checkIcon" ><i class="fas fa-check-circle"></i></span> Select Menu
                                         </div>
                                         <div class="col paymentInfo">
-                                            <span class="checkIcon"><i class="fas fa-check-circle"></i></span> Place order via Whatsapp
+                                            <span class="checkIcon"  ><i class="fa-brands fa-whatsapp"></i></span> Place order via Whatsapp
                                         </div>
                                         <div class="col paymentInfo">
-                                            <span class="checkIcon"><i class="fas fa-check-circle"></i></span> Pay using Google Pay.
+                                            <span class="checkIcon"><i class="fa-brands fa-google-pay"></i>
+
+                                            </span> Pay using Google Pay.
                                         </div>
                                     </div>
 
@@ -1326,6 +1331,7 @@
 
             <div class="row contactRow">
                 <p>
+                    <a class="footer_clickable" href="./index.html">Home</a> |
                     <a class="footer_clickable" href="#">Policies</a> |
                     <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a> |
                     <!-- <a class="footer_clickable" href="tel:+919871198882">Contact Us</a> -->
@@ -1346,7 +1352,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/9f6e489cf7.js" crossorigin="anonymous"></script>
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -1370,5 +1377,9 @@
 <!-- Custom JS -->
 <script src="./index.js"></script>
 </body>
-
+<script>
+  $(window).on('load', function () {
+    $('#loading').hide();
+  }) 
+</script>
 </html>

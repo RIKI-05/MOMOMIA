@@ -4,73 +4,146 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
+    <title>Contact US</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
+      integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="contactus.css" />
-    <link rel="shortcut icon" href="images/momo-icon.png" type="image/x-icon" />
-    
-    <style>
-      a {
-        text-decoration: none;
-      }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+    <!-- cdnfonts  -->
+    <link href="https://fonts.cdnfonts.com/css/elinga" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- Custom CSS -->
+    <link href='https://copyfonts.com/fonts/attari-salees.html'>
+    </link>
+    <link rel="stylesheet" href="nav.css" />
+
   </head>
-
   <body>
-    <div class="cont">
-      <h1>Contact us</h1>
-      <form class="cf">
-        <div class="half left cf">
-          <input type="text" id="input-name" placeholder="Name" />
-          <input type="email" id="input-email" placeholder="Email address" />
-          <input type="text" id="input-subject" placeholder="Subject" />
-        </div>
-        <div class="right cf">
-          <textarea
-            name="message"
-            type="text"
-            id="input-message"
-            placeholder="Message"
-          ></textarea>
-        </div>
-        <input type="submit" value="Submit" id="input-submit" />
-      </form>
-    </div>
-    <footer id="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-9 footerHeadingCol">
-                  <h2 style="font-family: 'elinga'; font-weight: 600; font-size: 3rem;">MOMOMIA</h2>
-
-              </div>
-
-              <div class="col-3 socialMedia">
-                  <a href="#" class="socialMediaIcon">
-                      <span><i class="fab fa-facebook-f"></i></span></a>
-                  <a href="#" class="socialMediaIcon">
-                      <span><i class="fab fa-twitter"></i></span></a>
-                  <a href="#" class="socialMediaIcon">
-                      <span><i class="fab fa-instagram"></i></span></a>
-                  <a href="https://www.linkedin.com/in/rishika-garg05/" target="_blank" class="socialMediaIcon">
-                      <span><i class="fab fa-linkedin"></i></span></a>
-              </div>
-          </div>
-
-
-          <div class="row contactRow">
-              <p>
-                <a class="footer_clickable" href="./index.html">Home</a> |
-                  <a class="footer_clickable" href="#">Policies</a> |
-                  <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a> |
-                  <!-- <a class="footer_clickable" href="tel:+919871198882">Contact Us</a> -->
-                  <a class="footer_clickable" href="./contactus.html">Contact Us</a>
-
-              </p>
-          </div>
-
-          <div class="row copyrightRow">
-              <p class="copyright">&copy; Copyright MOMOMIA All rights reserved.</p>
-          </div>
+    <section class="contact">
+      <div class="content">
+        <h2>Contact US</h2>
+        <p>We would love to hear from you!</p>
       </div>
-  </footer>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon">
+              <i><img src="icons\maps.gif" /></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>
+                Momomia Restaurant, <br />Sector 5 Market, <br />Dwarka, Delhi,
+                110075
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="icon1"><img src="icons\phone.gif" /></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>500-100-XXXX</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i><img src="icons\email.gif" /></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>tasty.momomia@bestfood.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form action="">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Full name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required="required" />
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type Your Message ...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+      <!-- Footer starts here -->
+
+    <footer id="footer">
+        <div >
+            <div class="row">
+                <div class="col-9 footerHeadingCol">
+                    <h2 style="font-family: 'elinga'; font-weight: 600; font-size: 3rem;">MOMOMIA</h2>
+
+                </div>
+
+                <div class="col-3 socialMedia">
+                    <a href="#" class="socialMediaIcon">
+                        <span><i class="fab fa-facebook-f"></i></span></a>
+                    <a href="#" class="socialMediaIcon">
+                        <span><i class="fab fa-twitter"></i></span></a>
+                    <a href="#" class="socialMediaIcon">
+                        <span><i class="fab fa-instagram"></i></span></a>
+                    <a href="https://www.linkedin.com/in/rishika-garg05/" target="_blank" class="socialMediaIcon">
+                        <span><i class="fab fa-linkedin"></i></span></a>
+                </div>
+            </div>
+
+
+            <div class="row contactRow">
+                <p>
+                    <a class="footer_clickable" href="./index.html">Home</a> |
+                    <a class="footer_clickable" href="#">Policies</a> |
+                    <a class="footer_clickable" href="./terms_of_service.html">Terms of Service</a> |
+                    <!-- <a class="footer_clickable" href="tel:+919871198882">Contact Us</a> -->
+                    <a class="footer_clickable" href="./contactus.html">Contact Us</a>
+
+                </p>
+            </div>
+
+            <div class="row copyrightRow">
+                <p class="copyright">&copy; Copyright MOMOMIA All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/9f6e489cf7.js" crossorigin="anonymous"></script>
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./index.js"></script>
+    
   </body>
 </html>

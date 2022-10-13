@@ -1,143 +1,119 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  min-height: 100vh;
-  padding: 0 15px;
-  /* overflow: hidden; */
-}
-.heading{
-  text-align: center;
-  margin-top: 15px;
-}
-.home{
-  text-decoration: none;
-  color: red;
-}
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 0 25px;
-  justify-content: space-around;
-}
-.left{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.left .credit,
-.left .credit a{
-  color: #a4a4a4;
-  text-decoration: none;
-}
-.right{
-  min-width: 300px;
-  margin-bottom: 20px;
-}
-.socials h2{
-  margin: 30px 0 15px;
-}
-.social{
-  background-color: white;
-  padding: 10px 30px;
-  margin: 0 15px;
-  cursor: pointer;
-  border: 2px solid #000;
-}
-.social:hover{
-  background-color: #2BAFE6;
-}
-.social:hover > i{
-  color: #fff;
-}
-.social i{
-  font-size: 25px;
-}
-.txtbox{
-  position: relative;
-  margin-top: 15px;
-  height: 30px;
-}
-.txtbox i{
-  position: absolute;
-  left: 6px;
-  top: 7px;
-  color: #aeaeae;
-}
-.msgbox{
-  margin-top: 15px;
-  height: 100px;
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+body {
+    background: #0d1010;
+    font-family: 'Merriweather', sans-serif;
+    padding: 1em;
+    
 }
 
-.txtbox input,
-.msgbox textarea{
-  height: 100%;
-  width: 100%;
-  border: 2px solid #aeaeae;
-  outline: none;
-  resize: none;
-}
-input#name,
-input#email{
-  padding-left: 25px;
+.cont{
+    width: fit-content;
+    height: fit-content;
+    margin:auto;
+    border: 1px solid white;
+    margin-top: 10vh;
+    border-radius: 10px;
+    padding: 2vh 1.5vw;
 }
 
-input#subject,
-textarea#message{
-  padding: 5px 10px;
-}
-input:focus,
-textarea:focus{
-  border-color: #2BAFE6;
-}
-input:focus ~ i{
-  color: #2BAFE6;
-}
-.submitbtn{
-  margin-top: 15px;
-  text-align: center;
-}
-.submitbtn .btn{
-  background-color: #F2AC30;
-  padding: 5px 16px;
-  cursor: pointer;
-}
-.btn:hover{
-  box-shadow: inset 0 0 10px #f8a100;
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(white, 1);
 }
 
-/* file upload design */
-input[type="file"]{
-  display: none;
-}
-.filebox{
-  margin-top: 15px;
-}
-.filebox label{
-  cursor: pointer;
-}
-.filebox i{
-  cursor: pointer;
-  rotate: 320deg;
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
+input, textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 34vw;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: vertical;
+}
+
+#input-submit {
+    color: black;
+    background: white;
+    cursor: pointer;
+    width: 36vw;
+}
+
+textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+.h2{
+    color: #ffc107
   }
-  /* .left img,
-  .left .credit{
-    display: none;
-  } */
-  .left .socials{
-    min-width: 300px;
+  
+  footer {
+    background-color: #0d1010;
+    color: #ffc107;
+    padding: 3% 0 2% 0;
   }
-  .right{
-    margin-top: 20px;
+  
+  .footerHeadingCol {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
-}
+  
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+  }
+  
+  .socialMediaIcon {
+    margin-right: 15px;
+    font-size: 2.2rem;
+  }
+  
+  .socialMediaIcon:hover{
+    color:#ffc107 !important;
+  }
+  
+  .contactRow,.addressRow {
+    width: 97%;
+    margin: auto;
+  }
+  
+  .addressRow .col-auto {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer a {
+    color: snow;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin: 30px auto 0 auto;
+  }
+  

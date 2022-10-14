@@ -51,19 +51,25 @@ a:hover {
 }
 
 .navbar-brand {
-  font-family: myFirstFont;
+  font-family: 'elinga', 'myFirstFont', 'Roboto';
   font-weight: 500;
   /* font-size: 0.5rem; */
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 56px;
 }
 .nav-item /* for each navbar item */ {
   font-size: 1.1rem;
   font-weight: 500;
 }
+.fixed-top{
+  z-index: 11;
+}
 /* ***********************************Home Section ********************************************/
-
+.home-container{
+  height: 100vh;
+  width: 132vw;
+  display: flex;
+  justify-content: center;
+}
 #homeSection {
   position: relative;
   padding: 20px 0;
@@ -180,7 +186,18 @@ a:hover {
   background-color: #6f1a07;
   padding-bottom: 6%;
 }
-
+#categorySection .container h1{
+  text-align: center;
+  margin: 50px auto;
+}
+#categorySection .container h1 span{
+  font-size: 4.5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #6f1a07;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+}
 .product-box-layout4 {
   padding: 30px;
   background-color: #ffffff;
@@ -263,7 +280,11 @@ a:hover {
 }
 
 /* ******************************************************Menu Card ************************************************/
-
+#momos,
+#chinese,
+#beverages {
+  display: none;
+}
 .menuHeading {
   margin: 0 auto 40px auto;
   position: relative;
@@ -439,6 +460,20 @@ a:hover {
   padding-bottom: 4%;
 }
 
+#healthySection .hygiene-title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#healthySection .hygiene-title span {
+  font-size: 5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #a8763e;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+}
+
 .eatSure {
   background-color: #efddc9;
   border-radius: 22px;
@@ -553,6 +588,11 @@ footer {
   align-items: center;
   justify-content: flex-start;
 }
+.footerHeadingCol h2 {
+  font-family: 'elinga', 'Roboto';
+  font-weight: 600;
+  font-size: 3rem;
+}
 /* policies, terms of service and contact */
 .footer_clickable:hover {
   color: #ffc107;
@@ -636,6 +676,9 @@ footer a {
 }
 
 .cartContentRow .col-2 .text-muted-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
 }
 /* horizontal line after each selected item on cart */

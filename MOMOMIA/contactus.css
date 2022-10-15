@@ -10,11 +10,11 @@
   padding: 2vh 1.5vw;
 }
 .icon img {
-  width: 1.17rem;
+  width: 3rem;
   height: auto;
 }
 .icon1 img {
-  width: 1.4rem;
+  width: 3rem;
   height: auto;
 }
 
@@ -41,18 +41,20 @@
 }
 
 .contact .content {
+  display: flex;
+  flex-direction: column;
   max-width: 800px;
   text-align: center;
 }
 
 .contact .content h2 {
-  font-size: 38px;
+  font-size: 50px;
   font-weight: 400;
   color: beige;
 }
 .contact .content p {
   padding-top: 4px;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 275;
   color: beige;
 }
@@ -77,8 +79,8 @@
 }
 
 .container .contactInfo .box .icon {
-  min-width: 35px;
-  height: 35px;
+  min-width: 4.5rem;
+  height: 4.5rem;
   background: #fff;
   display: flex;
   justify-content: center;

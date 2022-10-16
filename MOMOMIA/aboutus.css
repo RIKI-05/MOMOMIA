@@ -1,0 +1,93 @@
+#About-us{
+    background-color: rgb(50 46 48);
+    padding:2% 10%;
+}
+
+#About-us .aboutimg{
+    background: url("images/main.jpg");
+    background-size: cover;
+    width:43%;
+    height:40vh;
+    justify-content: center;
+    border-radius: 18px;;
+}
+
+#About-us #Abt{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#About-us #Heading{
+    padding-top: 10%;
+    width:40%;
+}
+
+#About-us #Heading h1{
+    font-size: 48px;
+    font-weight: 600;
+    color:#f3f2f2;
+    font-family: 'elinga';
+    font-size: 4rem;
+}
+
+#About-us #Heading p{
+    font-size: 24px;
+    color:#ffc107;
+}
+
+#About-us #About-desc{
+    margin:8% 0;
+  }
+
+#About-us #About-desc h1{
+  margin:3% 0;
+  font-size: 42px;
+  font-weight: 500;
+  color:#f2f2f2
+}
+
+#About-us #About-desc p{
+   color:#f2f2f2;
+   font-size: 2rem;
+   font-family: 'elinga';
+   font-weight: 200;
+  }
+
+#About-us #About-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+#About-us #About-content #image-col{
+    display: flex;
+    flex-direction: column;
+}
+
+#About-us #About-content #image-col .img{
+    margin-bottom: 10%;
+    border: 1px solid rgba(120, 117, 117, 0.29);
+}
+
+#About-us #About-content #image-about{
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    padding-left: 5%;
+}
+
+#About-us #About-content #image-about span{
+        font-family: 'elinga';
+        font-weight: 600;
+        font-size: 2rem;
+        color: #ffc107;
+}
+
+#About-us #About-content #image-about #name2{
+    margin:6% 0;
+    font-family: 'elinga';
+    font-weight: 600;
+    font-size: 2rem;
+    color: #ffc107;
+}
+

@@ -27,13 +27,14 @@
     font-size: 48px;
     font-weight: 600;
     color:#f3f2f2;
-    font-family: 'elinga';
+    font-family: "Poppins", sans-serif;
     font-size: 4rem;
 }
 
 #About-us #Heading p{
     font-size: 24px;
     color:#ffc107;
+    font-family: "Poppins", sans-serif;
 }
 
 #About-us #About-desc{
@@ -50,7 +51,7 @@
 #About-us #About-desc p{
    color:#f2f2f2;
    font-size: 2rem;
-   font-family: 'elinga';
+   font-family: "Poppins", sans-serif;
    font-weight: 200;
   }
 

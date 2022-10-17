@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Code+Pro:ital,wght@1,900&family=The+Nautigal:wght@700&display=swap');
+
+:root{
+    --white-color : #fff;
+    --black-color : #000;
+    --primary-color : #f5c332;
+    --secondary-color : #231e41;
+
+    --text-primary :#f5c332;
+    --text-secondary : #231e41;
+    --text-white :#fff;
+    --text-color: #555 ;
+    --text-gray : #999;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar{
+    width: 0.425rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color) ;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3.125rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    color : var(--secondary-color);
+}
+
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.3;
+    color : var(--secondary-color);
+}
+
+h4{
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color : var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color : var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.main-btn{
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition : all .4s ease-out;
+    box-shadow: 0 .125rem 0.625rem -0.625rem rgb(0 0 0 /19%);
+    border : 0.1875rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color : var(--black-color);
+}
+
+.main-btn:hover{
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.wrapper{
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.text-content{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.counter-section h2, .book-food-text h2{
+    color: var(--text-primary);
+}
+
+/* Navbar design*/
+
+.navigation-wrap.scroll-on{
+    position : fixed;
+    width: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-wrap .navbar-brand img{
+    width: 13rem;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navigation-wrap .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow:none;
+    margin-left: 0.625rem;
+}
+
+/*Banner Design*/
+.top-banner{
+    width: 100%;
+    background-image: url('../images/bg/bg-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14.875rem 0 9.375rem;
+
+}
+
+/*Counter Design*/
+.counter-section{
+    background-color: var(--black-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p{
+    text-transform: uppercase;
+    color: var(--text-white);
+    margin-bottom: 0;
+}
+
+/*About section design*/
+.food-type{
+    padding-top: 3.25rem;
+}
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 2rem;
+    position: relative;
+    margin-left: 1.875rem;
+}
+
+.food-type ul li::before{
+    position: absolute;
+    left: -2.1875rem;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+    content: '\f00c';
+}
+
+.services .card{
+    background: transparent;
+    border-radius: 0.9375rem;
+    border: 0.125rem dashed var(--primary-color);
+}
+.services .card img{
+    border-radius: 0.9375rem .9375rem 0 0;
+    object-fit: cover;
+}
+.services .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    color: var(--text-primary);
+    border-bottom: 0.0625rem solid var(--primary-color);
+}
+.services .card span del{
+    color: var(--text-gray);
+    margin-left: 0.5rem;
+}
+
+/*Team designing*/
+.team .card{
+    background-color: var(--black-color);
+    border-radius: 0.625rem;
+    border: 0.25rem solid var(--primary-color);
+    text-align: center;
+}
+
+.team img{
+    border-radius: 0.625rem 0.625rem 0 0;
+}
+.team h4{
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+.team h6, .team p{
+    color: var(--text-white);
+}
+
+.team .social-icon i{
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    margin: 0.3125rem;
+    font-size: 1.125rem;
+    width: 2.1875rem;
+    transition: 0.3s all ease;
+    height: 2.1875rem;
+    line-height: 2.1875rem;
+}
+
+.team .social-icon i:hover{
+    color: var(--text-primary);
+    background-color: var(--white-color);
+}
+
+/*Footer designing*/
+.footer{
+    background-color: var(--black-color);
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--text-white);
+    padding: 0 1.875rem;
+}
+
+.footer a i{
+    font-size: 1.50rem;
+    margin: 0.875rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    width: 2.4rem;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.contact{
+    background-image: url('../images/bg/contact1.webp');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.message{
+    background: var(--white-color);
+}
+
+.contact-i{
+    padding: 3%;
+}
+
+.contact .contact-i h4{
+    font-size: 1.2rem;
+}
+
+.contact .contact-i p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.contact .form .form-label{
+    text-align: start;
+    padding: 8px;
+    font-size: large;
+    font-weight: 700;
+
+}

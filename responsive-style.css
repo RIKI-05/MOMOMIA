@@ -1,0 +1,44 @@
+@media (max-width :991px) {
+    h1{
+        font-size: 2.1875;
+    }
+    h2{
+        font-size: 1.375;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .wrapper{
+        padding-top: 4.25rem;
+        padding-bottom: 3.25rem;
+    }
+
+    /*Navbar*/
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+    }
+
+    /*Banner Design*/
+    .top-banner{
+        padding: 6.375rem 0 4.375rem;
+    }
+}
+
+@media (max-width : 767px){
+    h1{
+        font-size: 1.875rem;
+    }
+
+    .navigation-wrap .navbar-brand img{
+        width: 12rem;
+    }
+
+    .footer .footer-link, .footer a i{
+        padding: 0 0.7rem;
+    }
+    
+}

@@ -223,8 +223,11 @@ a:hover {
   z-index: 2;
   height: 300px;
   width: 100%;
+  cursor: pointer;
 }
-
+.item-content .card-title{
+  cursor: pointer;
+}
 .product-box-layout4 .item-figure:after {
   content: "";
   position: absolute;

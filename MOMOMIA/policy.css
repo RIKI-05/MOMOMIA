@@ -1,0 +1,60 @@
+body {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 244, 222);
+  }
+  
+  /* *********************************** Navbar Section ********************************************/
+  .navbar-expand-lg {
+    background-color: #000000;
+    z-index: 2;
+    height: 74px;
+  }
+  
+  .navbar-brand {
+    font-family: myFirstFont;
+    font-weight: 500;
+    /* font-size: 0.5rem; */
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+  .nav-item /* for each navbar item */ {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Franklin Gothic Heavy", "Arial Narrow", Arial, sans-serif;
+    font-size: 32px;
+    margin-top: -10px;
+    padding: 30px;
+    color: burlywood;
+    border-bottom: 1px solid rgb(255, 223, 169);
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    word-wrap: normal;
+  }
+  li {
+    /* padding: 10px; */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 15px;
+  }
+  .text-white li{
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 992px){
+    .navbar-nav{
+    background-color: #FFC107;
+    text-align: right;
+    width: 150px;
+    border-radius: 10%;
+    
+  }
+  }

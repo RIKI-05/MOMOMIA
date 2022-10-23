@@ -17,8 +17,8 @@ The website is minimized as much as possible to avoid errors when entering data.
 - [Logo](#logo)
 - [Screenshots](#screenshots)
 - [Technology Stack](#tech_stack)
-- [How to Contribute](#How-to-Contribute)
 - [Open-Source program](#open_source_programs)
+- [How to Contribute](#How-to-Contribute)
 - [Contributors](#contributors)
 
 ## Logo <a name = "logo"></a>
@@ -33,6 +33,20 @@ The website is minimized as much as possible to avoid errors when entering data.
 ![updatedMomomia3](https://user-images.githubusercontent.com/89804314/194808047-36643fe9-ab51-43be-bc10-0079934eb661.jpg)
 
 ![updatedMomomia4](https://user-images.githubusercontent.com/89804314/194808259-bdb3e8a9-8d3c-4bfd-a8e4-e971653836a3.jpg)
+
+## Tech Stack <a name = "tech_stack"></a>
+<img alt="HTML5" src="https://img.shields.io/badge/html5-%23fca9ae.svg?style=for-the-badge&logo=html5&logoColor=140200"/>
+<img alt="CSS3" src="https://img.shields.io/badge/css3-%23ffd2ce.svg?style=for-the-badge&logo=css3&logoColor=140200"/>
+<img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23e4626b.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+
+## Open Source Programs  <a name = "open_source_programs"></a>
+<table>
+<tr>
+  <td align="center">
+<a href="https://hacktoberfest.com/"><img src="https://user-images.githubusercontent.com/79099734/195970153-ee19d55b-20fc-4ddb-a91d-000773699c37.png" width=120px height=100px /><br /><sub><b>Hacktoberfest</b></sub></a>
+ </td>
+ </tr>
+</table>
 
 ## 📌How to Contribute📝:<a name="How-to-Contribute"></a>
 

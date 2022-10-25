@@ -1,14 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-.cont {
-  width: fit-content;
-  height: fit-content;
-  margin: auto;
-  border: 1px solid white;
-  margin-top: 10vh;
-  border-radius: 10px;
-  padding: 2vh 1.5vw;
-}
+
 .icon img {
   width: 3rem;
   height: auto;
@@ -37,7 +29,7 @@
     url(images/bg.jpg);
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
+   height: 100vh; 
 }
 
 .contact .content {
@@ -159,53 +151,377 @@
   padding: 10px;
   font-size: 18px;
 }
+.h2 {
+  color: #ffc107;
+}
 
-@media (max-width: 900px) {
-  .contact {
-    padding: 50px;
+footer {
+  background-color: #0d1010;
+  color: #ffc107;
+  padding: 3% 0 2% 0;
+}
+
+.footerHeadingCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerHeadingCol h2 {
+  font-family: 'elinga', 'Roboto';
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.socialMedia
+
+/* social media section */
+  {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.socialMediaIcon
+
+/* individual icons styling */
+  {
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.contactRow,
+.addressRow {
+  width: 97%;
+  margin: auto;
+
+}
+
+.addressRow .col-auto {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: snow;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+/************************ Shopping Cart CSS ********************/
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body .container-fluid {
+  padding: 5px;
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.checkIcon {
+  font-size: 1.5rem;
+  color: red;
+  margin: auto 7px;
+}
+
+.cartContentDiv {
+  padding: 10px 0 10px 0;
+}
+
+.cartContentRow .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cartContentRow .col-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartQuantity
+
+/* Total number of cart items */
+  {
+  font-size: 0.8rem;
+}
+
+.cartContentRow .col-2 .text-muted-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* horizontal line after each selected item on cart */
+.cartHr {
+  color: black;
+  width: 90%;
+  margin: 5px auto;
+}
+
+/* Section for total amount on Cart */
+.totalAmountDiv {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  padding-left: 15px;
+}
+
+.totalAmountText {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Scroll To Top Button */
+
+#scrollToTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Scroll To Top Button Hover Over styles */
+#scrollToTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+/* After Scroll Top Button Has Been Clicked */
+#scrollToTop:active {
+  background-color: #555;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Social icon Hover colors */
+
+.fa-facebook-f:hover {
+  color: #4267B2;
+  font-size: 2.3rem;
+}
+
+.fa-twitter:hover {
+  color: #00aaee;
+  font-size: 2.3rem;
+}
+
+.fa-instagram:hover {
+  color: #E1306C;
+  font-size: 2.3rem;
+}
+
+.fa-facebook-f:hover {
+  color: #0e76a8;
+  font-size: 2.3rem;
+}
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background-color: #FFC107;
+    text-align: right;
+    width: 150px;
+    border-radius: 10%;
+
   }
-  .container {
-    flex-direction: column;
-  }
-  .container .contactInfo {
-    margin-bottom: 40px;
-  }
-  .container .contactInfo,
-  .contactForm {
-    width: 100%;
-  }
-  /* Footer css */
-  footer {
-    background-color: #0d1010;
-    color: #ffc107;
-    padding: 3% 0 2% 0;
+  
+}
+
+@media screen and (max-width: 920px) {
+  .navbar-brand {
+    font-size: 3rem;
+    margin-bottom: 5px;
   }
 
-  .footerHeadingCol {
-    padding-left: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  .homeTxtCol {
+    padding-right: 0;
+    padding-left: 0;
   }
 
-  .contactRow,
-  .addressRow {
-    padding-left: 10rem;
-    padding-top: 5px;
-    margin: auto;
+  .homeHeading {
+    font-size: 3rem;
   }
 
-  .addressRow .col-auto {
-    padding: 0;
-    margin: 0;
+  .homeHeading span {
+    font-size: 3.9rem;
   }
 
-  footer a {
-    color: snow;
+  .homeImgCol {
+    margin: 50px auto 0 auto;
+  }
+
+  .homeImg {
+    width: auto;
+    height: 100%;
+    margin-left: 10px !important;
+  }
+
+  #categorySection {
+    padding: 1% 10px 5%;
+  }
+
+  .product-box-layout4 .item-figure {
+    height: 200px;
+  }
+
+  .col-lg-4.col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .homeHeading {
+    font-size: 2.8rem;
+  }
+
+  .homeHeading span {
+    font-size: 3.6rem;
+  }
+
+  .col-lg-4.col-sm-4.col-4 {
+    padding: 0 6px;
+  }
+
+  .product-box-layout4 .item-figure {
+    height: 130px;
+  }
+
+  .item-content .card-title {
+    font-size: 1.1rem;
+  }
+
+  .product-box-layout4 {
+    padding: 10px;
+  }
+
+  .product-box-layout4 .item-content {
+    padding: 15px 0 0;
+  }
+
+  .col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+
+  .eatSure {
+    margin-bottom: 30px;
+  }
+
+  .safetyMeasures {
+    margin-top: 12%;
+  }
+
+  .footerHeadingCol h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .socialMediaIcon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .contactRow {
+    font-size: 0.9rem;
   }
 
   .copyright {
-    text-align: center;
-    margin: 30px auto 0 auto;
+    font-size: 0.9rem;
   }
+}
+
+@media screen and (max-width: 1000px) {
+  .homeHeading {
+    text-align: center;
+  }
+
+  .homeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+  }
+
+  .navbar {
+    height: 14vh;
+  }
+
+  .homeTxtCol {
+    padding-top: 73px;
+    margin-top: 30px;
+  }
+
+  .homeImgCol {
+    width: 244px;
+    height: 229px;
+  }
+
+  #categorySection {
+    width: 145vw;
+  }
+
+  #healthySection {
+    width: 145vw;
+  }
+
+  #footer {
+    width: 145vw;
+  }
+}
+
+/* checkout icons */
+.checkIcon {
+  color: green;
 }

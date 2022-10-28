@@ -17,7 +17,7 @@ footer {
   font-family: "Ubuntu", sans-serif;
   background-color: #0d1010;
   color: #ffc107;
-  padding: 3% 0 2% 0;
+  padding: 3% 2rem 2%;
 }
 
 .footerHeadingCol {
@@ -35,7 +35,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 5%;
 }
 
 .socialMediaIcon /* individual icons styling */ {

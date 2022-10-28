@@ -633,6 +633,49 @@ footer a {
   text-align: center;
   margin: 30px auto 0 auto;
 }
+/*Testimonials SEction*/
+#healthySection {
+  padding-top: 0.5%;
+  background-color: #000000;
+  padding-bottom: 4%;
+}
+
+#healthySection .hygiene-title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#healthySection .hygiene-title span {
+  font-size: 5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #a8763e;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+}
+
+.testimonials h3{
+  font-size: 4.5rem;
+  border: 1px solid #a8763e;
+  background-color: white;
+  color: #6f1a07;
+  padding: 1px 5px;
+  font-family: 'Roboto';
+  text-align: center;
+  margin: 50px auto;
+}
+
+.testimonials p{
+  color: white;
+}
+
+.testimonials h5{
+  color: red;
+}
+
+.testimonials h6{
+  color: white !important;
+}
 
 /************************ Shopping Cart CSS ********************/
 

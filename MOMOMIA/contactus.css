@@ -498,6 +498,28 @@ footer a {
     height: 14vh;
   }
 
+  #contactus-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .container .contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contactForm {
+    width: 80%;
+    padding: 40px;
+    background: #fff;
+  }
+
   .homeTxtCol {
     padding-top: 73px;
     margin-top: 30px;
@@ -517,7 +539,7 @@ footer a {
   }
 
   #footer {
-    width: 145vw;
+    width: 100%;
   }
 }
 

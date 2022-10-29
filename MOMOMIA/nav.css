@@ -128,3 +128,9 @@ li {
     border-radius: 10%;
   }
 }
+
+@media screen and (max-width: 1000px){
+  .navbar-expand-lg {
+    height: auto;
+  }
+}

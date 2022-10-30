@@ -1,7 +1,7 @@
 let food = [];
 let totalAmount = 0;
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     if ($(document).width() <= 992) {
         $('.navbar-nav').removeClass("ml-auto");
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     var scrollToTopBtn = $('#scrollToTop');
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(window).scrollTop() > 300) {
             scrollToTopBtn.addClass('show');
         } else {
@@ -21,14 +21,14 @@ $(document).ready(function() {
         }
     });
 
-    scrollToTopBtn.on('click', function(event) {
+    scrollToTopBtn.on('click', function (event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: 0
         }, '500');
     });
 
-    $(".navbar a").on('click', function(event) {
+    $(".navbar a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
             // console.log(this);
@@ -41,7 +41,7 @@ $(document).ready(function() {
             // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function() {
+            }, 800, function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
@@ -49,47 +49,47 @@ $(document).ready(function() {
         } // End if
     });
 
-    $('.homeBtn').click(function(event) {
+    $('.homeBtn').click(function (event) {
         if (this.hash !== "") {
             event.preventDefault();
             let hash = this.hash;
 
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-            }, 800, function() {
+            }, 800, function () {
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             });
         }
     });
 
-    $('.product-box-layout4').click(function() {
+    $('.product-box-layout4').click(function () {
         $(this).toggleClass("productClicked").parent().siblings('div').children().removeClass("productClicked");
         if ($(this)[0].className.search('momos productClicked') > -1) {
             $('#momos').show().siblings('div').hide();
 
             $('html, body').animate({
                 scrollTop: $('#momos').offset().top
-            }, 800, function() {});
+            }, 800, function () { });
 
         } else if ($(this)[0].className.search('chinese productClicked') > -1) {
             $('#chinese').show().siblings('div').hide();
 
             $('html, body').animate({
                 scrollTop: $('#chinese').offset().top
-            }, 800, function() {});
+            }, 800, function () { });
 
         } else if ($(this)[0].className.search('beverages productClicked') > -1) {
             $('#beverages').show().siblings('div').hide();
 
             $('html, body').animate({
                 scrollTop: $('#beverages').offset().top
-            }, 800, function() {});
+            }, 800, function () { });
         }
     });
 
 
-    $(".menuBtn").click(function() {
+    $(".menuBtn").click(function () {
         let quantity = $(this).siblings(".quantity");
         let foodNameClicked = quantity.parent().siblings('div').children().first().text().trim();
         let singleFoodAmount = Number(quantity.parent().siblings('div').children().last().text());

@@ -1,4 +1,4 @@
-/* ***********************************General Styles ********************************************/
+/* GENERAL STYLES */
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -6,10 +6,7 @@ body {
   background-color: #000000;
 }
 
-@font-face
-
-/*  Specifies Custom Font to display the text */
-  {
+@font-face /*  Specifies Custom Font to display the text */ {
   font-family: myFirstFont;
   src: url(fonts/EMcomic-Bold.ttf);
 }
@@ -48,7 +45,7 @@ a:hover {
   margin: auto;
 }
 
-/* *********************************** Navbar Section ********************************************/
+/* NAVBAR SECTION */
 .navbar-expand-lg {
   background-color: #000000;
   z-index: 2;
@@ -56,7 +53,7 @@ a:hover {
 }
 
 .navbar-brand {
-  font-family: 'elinga', 'myFirstFont', 'Roboto';
+  font-family: "elinga", "myFirstFont", "Roboto";
   font-weight: 500;
   /* font-size: 0.5rem; */
   font-size: 56px;
@@ -64,8 +61,7 @@ a:hover {
 
 .nav-item
 
-/* for each navbar item */
-  {
+/* for each navbar item */ {
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -74,7 +70,7 @@ a:hover {
   z-index: 11;
 }
 
-/* ***********************************Home Section ********************************************/
+/* HOME SECTION */
 .home-container {
   height: 100vh;
   width: 132vw;
@@ -135,7 +131,6 @@ a:hover {
 }
 
 @keyframes animate {
-
   0%,
   10%,
   100% {
@@ -209,12 +204,11 @@ a:hover {
   }
 }
 
-
 .homeImg:not(hover) {
   transition: transform 0.3s;
 }
 
-/* *************************************Category Section ***************************************/
+/* CATEGORY SECTION */
 
 #categorySection {
   padding-top: 1%;
@@ -233,7 +227,7 @@ a:hover {
   background-color: white;
   color: #6f1a07;
   padding: 1px 5px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .product-box-layout4 {
@@ -258,8 +252,7 @@ a:hover {
 
 .product-box-layout4 .item-figure
 
-/* indivdual card styles */
-  {
+/* indivdual card styles */ {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
@@ -326,7 +319,7 @@ a:hover {
   opacity: 0.7;
 }
 
-/* ******************************************************Menu Card ************************************************/
+/* MENU CARD */
 #momos,
 #chinese,
 #beverages {
@@ -455,7 +448,6 @@ a:hover {
   margin-left: 5px;
 }
 
-
 .text-muted-small {
   color: #434b52;
   margin-bottom: 3px;
@@ -504,8 +496,7 @@ a:hover {
   font-size: 1.3rem;
 }
 
-/* **********************************Hygiene Section ********************************************/
-
+/* HYGIENE SECTION */
 #healthySection {
   padding-top: 0.5%;
   background-color: #000000;
@@ -523,7 +514,7 @@ a:hover {
   background-color: white;
   color: #a8763e;
   padding: 1px 5px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .eatSure {
@@ -625,7 +616,7 @@ textarea#note {
   margin-top: 10px;
 }
 
-/* *****************************************Footer Section ****************************************/
+/* FOOTER SECTION */
 .h2 {
   color: #ffc107;
 }
@@ -643,7 +634,7 @@ footer {
 }
 
 .footerHeadingCol h2 {
-  font-family: 'elinga', 'Roboto';
+  font-family: "elinga", "Roboto";
   font-weight: 600;
   font-size: 3rem;
 }
@@ -656,8 +647,7 @@ footer {
 
 .socialMedia
 
-/* social media section */
-  {
+/* social media section */ {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -666,8 +656,7 @@ footer {
 
 .socialMediaIcon
 
-/* individual icons styling */
-  {
+/* individual icons styling */ {
   margin-right: 15px;
   font-size: 2.2rem;
 }
@@ -676,7 +665,6 @@ footer {
 .addressRow {
   width: 97%;
   margin: auto;
-
 }
 
 .addressRow .col-auto {
@@ -693,7 +681,7 @@ footer a {
   margin: 30px auto 0 auto;
 }
 
-/*Testimonials SEction*/
+/* TESTIMONIALS SECTION */
 #healthySection {
   padding-top: 0.5%;
   background-color: #000000;
@@ -711,7 +699,7 @@ footer a {
   background-color: white;
   color: #a8763e;
   padding: 1px 5px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .testimonials h3 {
@@ -720,7 +708,7 @@ footer a {
   background-color: white;
   color: #6f1a07;
   padding: 1px 5px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   text-align: center;
   margin: 50px auto;
 }
@@ -737,7 +725,7 @@ footer a {
   color: white !important;
 }
 
-/************************ Shopping Cart CSS ********************/
+/************************ SHOPPING CART CSS ********************/
 
 .modal-body {
   padding: 0;
@@ -780,8 +768,7 @@ footer a {
 
 .cartQuantity
 
-/* Total number of cart items */
-  {
+/* Total number of cart items */ {
   font-size: 0.8rem;
 }
 
@@ -853,7 +840,7 @@ footer a {
 /* Social icon Hover colors */
 
 .fa-facebook-f:hover {
-  color: #4267B2;
+  color: #4267b2;
   font-size: 2.3rem;
 }
 
@@ -863,7 +850,7 @@ footer a {
 }
 
 .fa-instagram:hover {
-  color: #E1306C;
+  color: #e1306c;
   font-size: 2.3rem;
 }
 
@@ -872,8 +859,7 @@ footer a {
   font-size: 2.3rem;
 }
 
-/* **************************Media Queries For Responsiveness**************************** */
-
+/* MEDIA QUERIES FOR RESPONSIVENESS */
 *::-webkit-scrollbar {
   width: 15px;
 }
@@ -889,11 +875,10 @@ footer a {
 
 @media screen and (max-width: 992px) {
   .navbar-nav {
-    background-color: #FFC107;
+    background-color: #ffc107;
     text-align: right;
     width: 150px;
     border-radius: 10%;
-
   }
 }
 

@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-
 .icon img {
   width: 3rem;
   height: auto;
@@ -26,10 +25,10 @@
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url(images/bg.jpg);
+    url(images/bg.webp);
   background-position: center;
   background-size: cover;
-   height: 100vh; 
+  height: 100vh;
 }
 
 .contact .content {
@@ -168,7 +167,7 @@ footer {
 }
 
 .footerHeadingCol h2 {
-  font-family: 'elinga', 'Roboto';
+  font-family: "elinga", "Roboto";
   font-weight: 600;
   font-size: 3rem;
 }
@@ -181,8 +180,7 @@ footer {
 
 .socialMedia
 
-/* social media section */
-  {
+/* social media section */ {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -191,8 +189,7 @@ footer {
 
 .socialMediaIcon
 
-/* individual icons styling */
-  {
+/* individual icons styling */ {
   margin-right: 15px;
   font-size: 2.2rem;
 }
@@ -201,7 +198,6 @@ footer {
 .addressRow {
   width: 97%;
   margin: auto;
-
 }
 
 .addressRow .col-auto {
@@ -261,8 +257,7 @@ footer a {
 
 .cartQuantity
 
-/* Total number of cart items */
-  {
+/* Total number of cart items */ {
   font-size: 0.8rem;
 }
 
@@ -334,7 +329,7 @@ footer a {
 /* Social icon Hover colors */
 
 .fa-facebook-f:hover {
-  color: #4267B2;
+  color: #4267b2;
   font-size: 2.3rem;
 }
 
@@ -344,7 +339,7 @@ footer a {
 }
 
 .fa-instagram:hover {
-  color: #E1306C;
+  color: #e1306c;
   font-size: 2.3rem;
 }
 
@@ -367,13 +362,11 @@ footer a {
 
 @media screen and (max-width: 992px) {
   .navbar-nav {
-    background-color: #FFC107;
+    background-color: #ffc107;
     text-align: right;
     width: 150px;
     border-radius: 10%;
-
   }
-  
 }
 
 @media screen and (max-width: 920px) {

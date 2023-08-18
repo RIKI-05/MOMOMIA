@@ -75,7 +75,7 @@ footer a {
 
 /* *********************************** Navbar Section ********************************************/
 .navbar-expand-lg {
-  background-color: #000000;
+  background-color: #0e0e0e;
   z-index: 2;
   height: 74px;
   padding-bottom: 2%;
@@ -133,4 +133,17 @@ li {
   .navbar-expand-lg {
     height: auto;
   }
+}
+
+/* Add this to your existing CSS styles or create a new CSS file */
+.navbar-dark.bg-black .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark.bg-black .navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-dark.bg-black .navbar-toggler:focus {
+  outline: none;
 }

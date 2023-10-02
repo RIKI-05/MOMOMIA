@@ -1,0 +1,136 @@
+/* ***********************************General Styles ********************************************/
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* *****************************************Footer Section ****************************************/
+.h2 {
+  color: #ffc107;
+}
+
+footer {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #0d1010;
+  color: #ffc107;
+  padding: 3% 2rem 2%;
+}
+
+.footerHeadingCol {
+  padding-left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.socialMedia /* social media section */ {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.socialMediaIcon /* individual icons styling */ {
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.socialMediaIcon:hover /* hover styles */ {
+  color: #ffc107 !important;
+  font-size: 2.3rem;
+}
+
+.contactRow,
+.addressRow {
+  padding-left: 5.5%;
+  width: 97%;
+  margin: auto;
+}
+
+.addressRow .col-auto {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: snow;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+/* checkout icons */
+.checkIcon {
+  color: green;
+}
+
+/* *********************************** Navbar Section ********************************************/
+.navbar-expand-lg {
+  background-color: #000000;
+  z-index: 2;
+  height: 74px;
+  padding-bottom: 2%;
+}
+
+.navbar-brand {
+  font-family: myFirstFont;
+  font-weight: 500;
+  /* font-size: 0.5rem; */
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+.nav-item /* for each navbar item */ {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Franklin Gothic Heavy", "Arial Narrow", Arial, sans-serif;
+  font-size: 32px;
+  margin-top: -10px;
+  padding: 30px;
+  color: burlywood;
+  border-bottom: 1px solid rgb(255, 223, 169);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  word-wrap: normal;
+}
+li {
+  /* padding: 10px; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+}
+.text-white li {
+  padding: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background-color: #ffc107;
+    text-align: right;
+    width: 150px;
+    border-radius: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .navbar-expand-lg {
+    height: auto;
+  }
+}

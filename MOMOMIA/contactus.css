@@ -1,119 +1,542 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-body {
-    background: #0d1010;
-    font-family: 'Merriweather', sans-serif;
-    padding: 1em;
-    
+.icon img {
+  width: 3rem;
+  height: auto;
+}
+.icon1 img {
+  width: 3rem;
+  height: auto;
 }
 
-.cont{
-    width: fit-content;
-    height: fit-content;
-    margin:auto;
-    border: 1px solid white;
-    margin-top: 10vh;
-    border-radius: 10px;
-    padding: 2vh 1.5vw;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 0 rgba(white, 1);
+.contact {
+  position: relative;
+  min-height: 100hv;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(images/bg.webp);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-form {
-    max-width: 600px;
-    text-align: center;
-    margin: 20px auto;
+.contact .content {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: center;
 }
 
-input, textarea {
-    border: 0;
-    outline: 0;
-    padding: 1em;
-    border-radius: 8px;
-    display: block;
-    width: 34vw;
-    margin-top: 1em;
-    font-family: 'Merriweather', sans-serif;
-    resize: vertical;
+.contact .content h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: beige;
+}
+.contact .content p {
+  padding-top: 4px;
+  font-size: 26px;
+  font-weight: 275;
+  color: beige;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-#input-submit {
-    color: black;
-    background: white;
-    cursor: pointer;
-    width: 36vw;
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-textarea {
-    height: 126px;
+.container .contactInfo .box {
+  position: relative;
+  padding: 25px 0;
+  display: flex;
 }
 
-.half {
-    float: left;
-    width: 48%;
-    margin-bottom: 1em;
+.container .contactInfo .box .icon {
+  min-width: 4.5rem;
+  height: 4.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
 }
 
-@media (max-width: 480px) {
-    .half {
-        width: 100%;
-        float: none;
-        margin-bottom: 0;
-    }
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
 }
 
-.h2{
-    color: #ffc107
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: bisque;
+}
+
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #592b00;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: rgb(245, 245, 166);
+  color: rgba(0, 0, 0, 0.775);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+.h2 {
+  color: #ffc107;
+}
+
+footer {
+  background-color: #0d1010;
+  color: #ffc107;
+  padding: 3% 0 2% 0;
+}
+
+.footerHeadingCol {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerHeadingCol h2 {
+  font-family: "elinga", "Roboto";
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+/* policies, terms of service and contact */
+.footer_clickable:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.socialMedia
+
+/* social media section */ {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.socialMediaIcon
+
+/* individual icons styling */ {
+  margin-right: 15px;
+  font-size: 2.2rem;
+}
+
+.contactRow,
+.addressRow {
+  width: 97%;
+  margin: auto;
+}
+
+.addressRow .col-auto {
+  padding: 0;
+  margin: 0;
+}
+
+footer a {
+  color: snow;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+/************************ Shopping Cart CSS ********************/
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-body .container-fluid {
+  padding: 5px;
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.checkIcon {
+  font-size: 1.5rem;
+  color: red;
+  margin: auto 7px;
+}
+
+.cartContentDiv {
+  padding: 10px 0 10px 0;
+}
+
+.cartContentRow .col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cartContentRow .col-10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cartQuantity
+
+/* Total number of cart items */ {
+  font-size: 0.8rem;
+}
+
+.cartContentRow .col-2 .text-muted-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* horizontal line after each selected item on cart */
+.cartHr {
+  color: black;
+  width: 90%;
+  margin: 5px auto;
+}
+
+/* Section for total amount on Cart */
+.totalAmountDiv {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  padding-left: 15px;
+}
+
+.totalAmountText {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Scroll To Top Button */
+
+#scrollToTop {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #ff9800;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Scroll To Top Button Hover Over styles */
+#scrollToTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+/* After Scroll Top Button Has Been Clicked */
+#scrollToTop:active {
+  background-color: #555;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Social icon Hover colors */
+
+.fa-facebook-f:hover {
+  color: #4267b2;
+  font-size: 2.3rem;
+}
+
+.fa-twitter:hover {
+  color: #00aaee;
+  font-size: 2.3rem;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+  font-size: 2.3rem;
+}
+
+.fa-facebook-f:hover {
+  color: #0e76a8;
+  font-size: 2.3rem;
+}
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: black;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    background-color: #ffc107;
+    text-align: right;
+    width: 150px;
+    border-radius: 10%;
   }
-  
-  footer {
-    background-color: #0d1010;
-    color: #ffc107;
-    padding: 3% 0 2% 0;
+}
+
+@media screen and (max-width: 920px) {
+  .navbar-brand {
+    font-size: 3rem;
+    margin-bottom: 5px;
   }
-  
-  .footerHeadingCol {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+
+  .homeTxtCol {
+    padding-right: 0;
+    padding-left: 0;
   }
-  
-  .socialMedia {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 5%;
+
+  .homeHeading {
+    font-size: 3rem;
   }
-  
+
+  .homeHeading span {
+    font-size: 3.9rem;
+  }
+
+  .homeImgCol {
+    margin: 50px auto 0 auto;
+  }
+
+  .homeImg {
+    width: auto;
+    height: 100%;
+    margin-left: 10px !important;
+  }
+
+  #categorySection {
+    padding: 1% 10px 5%;
+  }
+
+  .product-box-layout4 .item-figure {
+    height: 200px;
+  }
+
+  .col-lg-4.col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .homeHeading {
+    font-size: 2.8rem;
+  }
+
+  .homeHeading span {
+    font-size: 3.6rem;
+  }
+
+  .col-lg-4.col-sm-4.col-4 {
+    padding: 0 6px;
+  }
+
+  .product-box-layout4 .item-figure {
+    height: 130px;
+  }
+
+  .item-content .card-title {
+    font-size: 1.1rem;
+  }
+
+  .product-box-layout4 {
+    padding: 10px;
+  }
+
+  .product-box-layout4 .item-content {
+    padding: 15px 0 0;
+  }
+
+  .col-sm-6.col-12 .card {
+    margin-bottom: 15px;
+  }
+
+  .eatSure {
+    margin-bottom: 30px;
+  }
+
+  .safetyMeasures {
+    margin-top: 12%;
+  }
+
+  .footerHeadingCol h2 {
+    font-size: 2.5rem !important;
+  }
+
   .socialMediaIcon {
-    margin-right: 15px;
-    font-size: 2.2rem;
+    margin-right: 10px;
+    font-size: 1.2rem;
   }
-  
-  .socialMediaIcon:hover{
-    color:#ffc107 !important;
+
+  .contactRow {
+    font-size: 0.9rem;
   }
-  
-  .contactRow,.addressRow {
-    width: 97%;
-    margin: auto;
-  }
-  
-  .addressRow .col-auto {
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer a {
-    color: snow;
-  }
-  
+
   .copyright {
-    text-align: center;
-    margin: 30px auto 0 auto;
+    font-size: 0.9rem;
   }
-  
+}
+
+@media screen and (max-width: 1000px) {
+  .homeHeading {
+    text-align: center;
+  }
+
+  .homeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+  }
+
+  .navbar {
+    height: 14vh;
+  }
+
+  #contactus-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .container .contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contactForm {
+    width: 80%;
+    padding: 40px;
+    background: #fff;
+  }
+
+  .homeTxtCol {
+    padding-top: 73px;
+    margin-top: 30px;
+  }
+
+  .homeImgCol {
+    width: 244px;
+    height: 229px;
+  }
+
+  #categorySection {
+    width: 145vw;
+  }
+
+  #healthySection {
+    width: 145vw;
+  }
+
+  #footer {
+    width: 100%;
+  }
+}
+
+/* checkout icons */
+.checkIcon {
+  color: green;
+}

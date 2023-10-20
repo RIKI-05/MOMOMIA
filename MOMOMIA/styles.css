@@ -362,11 +362,10 @@ a:hover {
 .shoppingCartAfter {
   position: absolute;
   font-size: 0.7rem;
-  padding: 1px 5px;
   border-radius: 50%;
   background-color: #000000;
-  top: 0;
-  right: -13px;
+  top: 1rem;
+  right: 0px;
   color: white;
 }
 
@@ -874,15 +873,21 @@ footer a {
 }
 
 @media screen and (max-width: 992px) {
+  #main{
+    width: 100% !important;
+  }
   .navbar-nav {
     background-color: #ffc107;
     text-align: right;
-    width: 150px;
+    width: 50px;
     border-radius: 10%;
   }
 }
 
 @media screen and (max-width: 920px) {
+  #main{
+    width: 100% !important;
+  }
   .navbar-brand {
     font-size: 3rem;
     margin-bottom: 5px;
@@ -925,6 +930,9 @@ footer a {
 }
 
 @media screen and (max-width: 500px) {
+  #main{
+    width: 100% !important;
+  }
   .navbar-brand {
     font-size: 2.5rem;
     margin-bottom: 5px;
@@ -1030,4 +1038,24 @@ footer a {
 /* checkout icons */
 .checkIcon {
   color: green;
+}
+#main{
+  width: 100% !important;
+}
+
+.item-content h2{
+font-size: 1rem;
+}
+#shoppingclass{
+position: relative;
+}
+#zero{
+position: relative !important;
+top: -0.7rem;
+background-color: white !important;
+color: black !important;
+left: -0.2rem;
+}
+#cart{
+ position:  relative !important;
 }

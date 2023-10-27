@@ -117,7 +117,7 @@ git push -u origin <your_branch_name>
 
 **12.** To create a pull request, click on `compare and pull requests`.
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**13.** Add appropriate title and description to your PR explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
 
@@ -125,7 +125,7 @@ git push -u origin <your_branch_name>
 **15.** Woohoo! You have made a PR to the community-website :boom: . Wait for your submission to be accepted and your PR to be merged.
 </div>
 
-**Thank you for your interest in contributing to our Repo!🏼**
+**Thank you for your interest in contributing to this Repo!🏼**
 
 **Kudos to you🎈**
 

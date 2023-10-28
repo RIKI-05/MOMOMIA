@@ -215,7 +215,6 @@ $(document).ready(function () {
     }
 
     $(".shoppingCartAfter").text(food.length);
-    totalAmount = food.reduce((total, item) => total + item[1] * item[2], 0);
     if (food.length === 0) {
       totalAmount = 0;
     }else {
@@ -225,7 +224,7 @@ $(document).ready(function () {
     $(".totalAmountDiv").append(
       '<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' +
         '<i class="fas fa-rupee-sign"></i> ' +
-        totalAmount.toFixed(2)
+        totalAmount
     );
   }
 });

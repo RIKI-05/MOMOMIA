@@ -121,9 +121,11 @@ $(document).ready(function () {
       .first()
       .text()
       .trim();
-    let singleFoodAmount = Number(
-      quantity.parent().siblings("div").children().last().text()
-    );
+    let singleFoodAmount= quantity.parent().siblings("div").children().last().text();
+    let numericPart = singleFoodAmount.replace(/[^\d.]/g, '');
+    if (!isNaN(numericPart)) {
+      singleFoodAmount = parseFloat(numericPart);
+    } 
     let isVeg = quantity
       .parent()
       .siblings("div")
@@ -213,18 +215,17 @@ $(document).ready(function () {
     }
 
     $(".shoppingCartAfter").text(food.length);
-
+    totalAmount = food.reduce((total, item) => total + item[1] * item[2], 0);
     if (food.length === 0) {
       totalAmount = 0;
-    } else {
+    }else {
       totalAmount = totalAmount + singleFoodAmount;
     }
-
     $(".totalAmountDiv").empty();
     $(".totalAmountDiv").append(
       '<span class="totalAmountText">TOTAL AMOUNT : </span><br/>' +
         '<i class="fas fa-rupee-sign"></i> ' +
-        totalAmount
+        totalAmount.toFixed(2)
     );
   }
 });

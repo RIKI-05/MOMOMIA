@@ -22,7 +22,7 @@ The website is minimized as much as possible to avoid errors when entering data.
 - [Contributors](#contributors)
 
 ## Logo <a name = "logo"></a>
-<img height =200px, src="https://user-images.githubusercontent.com/62802231/194802891-66d7c782-9765-419d-964b-b6bf6323b95a.gif"/>
+<img height="400px" src="https://user-images.githubusercontent.com/62802231/194802891-66d7c782-9765-419d-964b-b6bf6323b95a.gif"/>
 
 # SCREENSHOTS <a name="screenshots"></a>
 

@@ -1,4 +1,4 @@
-# Contributing to `MOMOMIA` 
+# Contributing to `MOMOMIA` :) 
   
  A big welcome and thank you for considering contributing to **Momomia** open source project! 😀
   
